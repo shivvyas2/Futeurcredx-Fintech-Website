@@ -4,25 +4,25 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
-const About = () => {
+const HowItWorksContent = () => {
   return (
     <section className="container mt-10 flex max-w-5xl flex-col-reverse gap-8 md:mt-14 md:gap-14 lg:mt-20 lg:flex-row lg:items-end">
       {/* Images Left - Text Right */}
       <div className="flex flex-col gap-8 lg:gap-16 xl:gap-20">
         <ImageSection
           images={[
-            { src: '/about/1.webp', alt: 'Industry Contradiction' },
-            { src: '/about/2.webp', alt: 'Real Cost' },
+            { src: '/about/1.webp', alt: 'Where LumiqAI Sits' },
+            { src: '/about/2.webp', alt: 'Operating Loop' },
           ]}
           className="xl:-translate-x-10"
         />
 
         <TextSection
-          title="The Industry Contradiction Every Fintech Quietly Hides"
+          title="Where LumiqAI Sits"
           paragraphs={[
-            'Fintech sells itself as modern. But when ambiguity hits: underwriters retreat to owner FICO, product teams default to crude revenue brackets, banks lean on thin-file heuristics, RBF gates assume survival already occurred.',
-            "Why? Because uncertainty scares balance sheets. So when revenue is low and business credit files don't exist, the system trusts: The founder's personal past — not the business's future.",
-            "This isn't innovation — this is risk avoidance dressed in better UI. It feels modern, but it is still anchored in history — not potential.",
+            'LumiqAI lives between application and capital. It does not compete with your stack. It feeds it cleaner inputs.',
+            'Products Layer: Banking Products, Lending Products, Revenue-Based Financing. LumiqAI: The Pre-Credit Operating Layer — sits between products and underwriting.',
+            'Foundation Layer: Core Underwriting Logic, Sponsor Bank Policies, Approval Authority. LumiqAI operates above your products and below your core systems, providing the intelligence layer that connects them.',
           ]}
           ctaButton={{
             href: '/contact',
@@ -34,17 +34,16 @@ const About = () => {
       {/* Text Left - Images Right */}
       <div className="flex flex-col gap-8 lg:gap-16 xl:gap-20">
         <TextSection
-          title="The Real Cost of Current Approaches"
+          title="What LumiqAI Does — and Doesn't Do"
           paragraphs={[
-            "Here's what your funnel doesn't tell you: You don't lose customers later. You lose them before they even begin.",
-            "You reject: disciplined operators, early-stage LLCs, service-based ventures with contracts, founders yet to monetize. Not because they're bad risks — but because your stack lacks a way for them to earn trust incrementally.",
-            "That's the moment every modern fintech misses.",
+            'What LumiqAI Observes: Consistency of behavior, Reporting discipline, Cashflow patterns (where applicable), Structural readiness indicators, Progression against defined milestones. These signals inform progression, explain decisions, and reduce uncertainty.',
+            'What LumiqAI Does Not Do: ✕ Move funds ✕ Approve credit alone ✕ Override sponsor rules ✕ Replace your underwriting models ✕ Force exposure increases. LumiqAI is a control layer, not a risk engine.',
           ]}
         />
         <ImageSection
           images={[
-            { src: '/about/3.webp', alt: 'Radical Insight' },
-            { src: '/about/4.webp', alt: 'Measured Opportunity' },
+            { src: '/about/3.webp', alt: 'What LumiqAI Does' },
+            { src: '/about/4.webp', alt: 'Control Layer' },
           ]}
           className="hidden lg:flex xl:translate-x-10"
         />
@@ -53,7 +52,7 @@ const About = () => {
   );
 };
 
-export default About;
+export default HowItWorksContent;
 
 interface ImageSectionProps {
   images: { src: string; alt: string }[];
@@ -112,3 +111,4 @@ export function TextSection({
     </div>
   );
 }
+

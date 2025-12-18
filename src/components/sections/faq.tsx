@@ -10,52 +10,52 @@ import { cn } from '@/lib/utils';
 
 const categories = [
   {
-    title: 'Support',
+    title: 'Risk & Compliance',
     questions: [
       {
-        question: 'How do I update my account without breaking my laptop?',
+        question: 'Does FuteurCredX make credit decisions?',
         answer:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.',
+          'No. FuteurCredX does not make credit decisions. Approval authority stays exactly where it belongs — with your underwriting engines and sponsor rules.',
       },
       {
-        question: 'Is support free, or do I need to Google everything?',
+        question: 'Are any funds moved through the platform?',
         answer:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.',
+          'No funds are moved. FuteurCredX operates outside capital movement and approval authority.',
       },
       {
-        question: 'Are you going to be subsumed by AI?',
+        question: 'Does it override existing policies?',
         answer:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.',
+          'No policy overrides. Built for sponsors, compliance, and governance. Risk is not reduced by avoidance — it\'s reduced by visibility.',
       },
     ],
   },
   {
-    title: 'Your account',
+    title: 'Deployment',
     questions: [
       {
-        question: 'Is support free, or do I need to Google everything?',
+        question: 'How is deployment structured?',
         answer:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.',
+          'Private, scoped pilots. One platform per category. Sponsor-aligned configuration. Expansion only after proof.',
       },
       {
-        question: 'Are you going to be subsumed by AI?',
+        question: 'Where does FuteurCredX fit in our stack?',
         answer:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.',
+          'Above banking, lending, and RBF products. Below underwriting engines and sponsor rules. Outside capital movement and approval authority.',
       },
     ],
   },
   {
-    title: 'Other questions',
+    title: 'Capabilities',
     questions: [
       {
-        question: 'Is support free, or do I need to Google everything?',
+        question: 'What is Credit Visibility at Scale?',
         answer:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.',
+          'Personal VantageScore + business credit context, normalized and explainable.',
       },
       {
-        question: 'Are you going to be subsumed by AI?',
+        question: 'What is Progression Infrastructure?',
         answer:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.',
+          'Turn binary decline into governed readiness with Measured Opportunity. SMBs see exactly what unlocks each product — no guessing.',
       },
     ],
   },

@@ -11,40 +11,37 @@ import { cn } from '@/lib/utils';
 
 const plans = [
   {
-    name: 'Free',
-    monthlyPrice: '$0',
-    yearlyPrice: '$0',
-    description: 'Free for everyone',
+    name: 'Risk & Compliance',
+    monthlyPrice: '',
+    yearlyPrice: '',
+    description: 'Designed for Risk Teams',
     features: [
-      'Unlimited members',
-      '2 teams',
-      '500 issues',
-      'Slack and Github integrations',
+      'No credit decisions made',
+      'No funds moved',
+      'No policy overrides',
+      'No pre-approval language',
     ],
   },
   {
-    name: 'Startup',
-    monthlyPrice: '$8',
-    yearlyPrice: '$6',
+    name: 'Enterprise Deployment',
+    monthlyPrice: '',
+    yearlyPrice: '',
     features: [
-      'All free plan features and...',
-      'Mainline AI',
-      'Unlimited teams',
-      'Unlimited issues and file uploads',
-      'Mainline Insights',
-      'Admin roles',
+      'Private, scoped pilots',
+      'One platform per category',
+      'Sponsor-aligned configuration',
+      'Expansion only after proof',
     ],
   },
   {
-    name: 'Enterprise',
-    monthlyPrice: '$8',
-    yearlyPrice: '$6',
+    name: 'Where FuteurCredX Fits',
+    monthlyPrice: '',
+    yearlyPrice: '',
     features: [
-      'All free plan features and...',
-      'Mainline AI',
-      'Supermainline AGI',
-      'Free daily catered lunch',
-      'random HIPPA audits',
+      'Above banking, lending, and RBF products',
+      'Below underwriting engines and sponsor rules',
+      'Outside capital movement and approval authority',
+      'Feeds cleaner, richer, longitudinal context',
     ],
   },
 ];
@@ -57,12 +54,11 @@ export const Pricing = ({ className }: { className?: string }) => {
       <div className="container max-w-5xl">
         <div className="space-y-4 text-center">
           <h2 className="text-2xl font-semibold tracking-tight md:text-4xl lg:text-5xl">
-            Pricing
+            Enterprise Deployment Model
           </h2>
           <p className="text-muted-foreground mx-auto max-w-xl leading-snug font-medium text-balance">
-            Use Mainline for free with your whole team. Upgrade to enable
-            unlimited issues, enhanced security controls, and additional
-            features.
+            Risk is not reduced by avoidance. It&apos;s reduced by visibility.
+            FuteurCredX Enterprise operates above products, below policy, and outside the money path.
           </p>
         </div>
 
@@ -71,7 +67,7 @@ export const Pricing = ({ className }: { className?: string }) => {
             <Card
               key={plan.name}
               className={`${
-                plan.name === 'Startup'
+                plan.name === 'Enterprise Deployment'
                   ? 'outline-primary origin-top outline-4'
                   : ''
               }`}
@@ -120,9 +116,9 @@ export const Pricing = ({ className }: { className?: string }) => {
 
                 <Button
                   className="w-fit"
-                  variant={plan.name === 'Startup' ? 'default' : 'outline'}
+                  variant={plan.name === 'Enterprise Deployment' ? 'default' : 'outline'}
                 >
-                  Get started
+                  Request Enterprise Briefing
                 </Button>
               </CardContent>
             </Card>

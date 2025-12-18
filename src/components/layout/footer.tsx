@@ -28,7 +28,7 @@ export function Footer() {
           Start your free trial today
         </h2>
         <p className="text-muted-foreground mx-auto max-w-xl leading-snug font-medium text-balance">
-          Mainline is the fit-for-purpose tool for planning and building modern
+          FUTEURCREDX is the infrastructure layer for SMB readiness, credit visibility, and progression. For Enterprise.
           software products.
         </p>
         <div>
@@ -74,13 +74,11 @@ export function Footer() {
           ))}
         </ul>
       </nav>
-      <Image
-        src="/footer.svg"
-        alt="Mainline"
-        width={1570}
-        height={375}
-        className="mt-10 md:mt-14 lg:mt-20"
-      />
+      <div className="mt-10 w-full overflow-hidden text-center md:mt-14 lg:mt-20">
+        <h2 className="text-[8vw] font-bold tracking-tighter text-slate-200 dark:text-slate-800 md:text-[10vw] lg:text-[12vw]">
+          FUTEURCREDX
+        </h2>
+      </div>
     </footer>
   );
 }

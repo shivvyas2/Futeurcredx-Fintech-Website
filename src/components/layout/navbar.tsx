@@ -21,27 +21,10 @@ import {
 import { cn } from '@/lib/utils';
 
 const ITEMS = [
-  {
-    label: 'Features',
-    href: '#features',
-    dropdownItems: [
-      {
-        title: 'Modern product teams',
-        href: '/#feature-modern-teams',
-        description:
-          'Mainline is built on the habits that make the best product teams successful',
-      },
-      {
-        title: 'Resource Allocation',
-        href: '/#resource-allocation',
-        description: 'Mainline your resource allocation and execution',
-      },
-    ],
-  },
   { label: 'About Us', href: '/about' },
-  { label: 'Pricing', href: '/pricing' },
-  { label: 'FAQ', href: '/faq' },
-  { label: 'Contact', href: '/contact' },
+  { label: 'How It Works', href: '/how-it-works' },
+  { label: 'Risk & Control', href: '/risk-and-control' },
+  { label: 'Outcomes', href: '/outcomes' },
 ];
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -49,25 +32,21 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <header className="bg-background/70 absolute top-5 left-1/2 z-50 w-[min(90%,700px)] -translate-x-1/2 rounded-full border backdrop-blur-md lg:top-12">
-      <div className="flex items-center justify-between px-6 py-3">
-        <Link href="/" className="flex shrink-0 items-center gap-2">
-          <Image
-            src="/logo.svg"
-            alt="logo"
-            width={94}
-            height={18}
-            className="dark:invert"
-          />
+    <header className="bg-background/70 absolute top-5 left-1/2 z-50 w-[min(98%,1920px)] -translate-x-1/2 rounded-full border backdrop-blur-md lg:top-12">
+      <div className="flex items-center justify-between px-6 py-3 lg:px-12 lg:py-4">
+        {/* Logo Section */}
+        <Link href="/" className="flex shrink-0 flex-col items-start">
+          <span className="text-base font-extrabold tracking-tight text-slate-700 dark:text-slate-200 lg:text-lg">FUTEURCREDX</span>
+          <span className="text-muted-foreground/40 text-[3px] font-thin tracking-[0.1em] uppercase">For Enterprise</span>
         </Link>
 
-        {/* Desktop Navigation */}
-        <NavigationMenu className="max-lg:hidden">
-          <NavigationMenuList>
+        {/* Desktop Navigation - Centered */}
+        <NavigationMenu className="max-lg:hidden mx-auto">
+          <NavigationMenuList className="gap-2">
             {ITEMS.map((link) =>
               link.dropdownItems ? (
-                <NavigationMenuItem key={link.label} className="">
-                  <NavigationMenuTrigger className="data-[state=open]:bg-accent/50 bg-transparent! px-1.5">
+                <NavigationMenuItem key={link.label}>
+                  <NavigationMenuTrigger className="data-[state=open]:bg-accent/50 bg-transparent! px-2.5 py-1.5 text-sm">
                     {link.label}
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
@@ -95,11 +74,11 @@ const Navbar = () => {
                   </NavigationMenuContent>
                 </NavigationMenuItem>
               ) : (
-                <NavigationMenuItem key={link.label} className="">
+                <NavigationMenuItem key={link.label}>
                   <Link
                     href={link.href}
                     className={cn(
-                      'relative bg-transparent px-1.5 text-sm font-medium',
+                      'relative bg-transparent px-4 py-2 text-xs font-medium transition-colors hover:text-primary/80 whitespace-nowrap',
                       pathname === link.href && 'text-muted-foreground',
                     )}
                   >
@@ -111,12 +90,12 @@ const Navbar = () => {
           </NavigationMenuList>
         </NavigationMenu>
 
-        {/* Auth Buttons */}
-        <div className="flex items-center gap-2.5">
+        {/* Right Section - Theme Toggle & Contact */}
+        <div className="flex items-center gap-2 lg:gap-3">
           <ThemeToggle />
-          <Link href="/login" className="max-lg:hidden">
-            <Button variant="outline">
-              <span className="relative z-10">Login</span>
+          <Link href="/contact" className="max-lg:hidden">
+            <Button variant="outline" size="sm" className="text-xs lg:text-sm">
+              <span className="relative z-10">Contact Us</span>
             </Button>
           </Link>
 
@@ -227,3 +206,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

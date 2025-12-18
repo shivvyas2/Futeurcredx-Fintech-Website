@@ -4,25 +4,25 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
-const About = () => {
+const RiskControlContent = () => {
   return (
     <section className="container mt-10 flex max-w-5xl flex-col-reverse gap-8 md:mt-14 md:gap-14 lg:mt-20 lg:flex-row lg:items-end">
       {/* Images Left - Text Right */}
       <div className="flex flex-col gap-8 lg:gap-16 xl:gap-20">
         <ImageSection
           images={[
-            { src: '/about/1.webp', alt: 'Industry Contradiction' },
-            { src: '/about/2.webp', alt: 'Real Cost' },
+            { src: '/about/1.webp', alt: 'Risk Philosophy' },
+            { src: '/about/2.webp', alt: 'Authority' },
           ]}
           className="xl:-translate-x-10"
         />
 
         <TextSection
-          title="The Industry Contradiction Every Fintech Quietly Hides"
+          title="The Risk Philosophy"
           paragraphs={[
-            'Fintech sells itself as modern. But when ambiguity hits: underwriters retreat to owner FICO, product teams default to crude revenue brackets, banks lean on thin-file heuristics, RBF gates assume survival already occurred.',
-            "Why? Because uncertainty scares balance sheets. So when revenue is low and business credit files don't exist, the system trusts: The founder's personal past — not the business's future.",
-            "This isn't innovation — this is risk avoidance dressed in better UI. It feels modern, but it is still anchored in history — not potential.",
+            'Modern credit systems break at the same point: Uncertainty. When signal quality drops, most stacks default to: owner FICO, hard revenue gates, binary rejection.',
+            'Those are not conservative decisions. They are blind ones.',
+            '"Risk should not be avoided when uncertainty appears. It should be measured, staged, and governed." This is the role of the Pre-Credit Operating System.',
           ]}
           ctaButton={{
             href: '/contact',
@@ -34,17 +34,17 @@ const About = () => {
       {/* Text Left - Images Right */}
       <div className="flex flex-col gap-8 lg:gap-16 xl:gap-20">
         <TextSection
-          title="The Real Cost of Current Approaches"
+          title="Authority Never Moves"
           paragraphs={[
-            "Here's what your funnel doesn't tell you: You don't lose customers later. You lose them before they even begin.",
-            "You reject: disciplined operators, early-stage LLCs, service-based ventures with contracts, founders yet to monetize. Not because they're bad risks — but because your stack lacks a way for them to earn trust incrementally.",
-            "That's the moment every modern fintech misses.",
+            'LumiqAI is intentionally designed so that nothing critical changes hands. Authority Stays With You: ✓ Your institution — final approval authority ✓ Your sponsor bank / BIN sponsor — policy and constraints ✓ Your risk committee — escalation, override, kill-switch ✓ Your underwriting models — decisioning',
+            'LumiqAI Does Not: ✕ Does not approve ✕ Does not decline ✕ Does not lend. It governs the space between those outcomes.',
+            'What Does Not Change: Eligibility rules, Approval thresholds, Sponsor constraints, Credit policy, Capital exposure limits. What Does Change: → What happens after "not approved" → How readiness is formed → Whether uncertainty becomes data or dead ends.',
           ]}
         />
         <ImageSection
           images={[
-            { src: '/about/3.webp', alt: 'Radical Insight' },
-            { src: '/about/4.webp', alt: 'Measured Opportunity' },
+            { src: '/about/3.webp', alt: 'Measured Opportunity' },
+            { src: '/about/4.webp', alt: 'Control Layer' },
           ]}
           className="hidden lg:flex xl:translate-x-10"
         />
@@ -53,7 +53,7 @@ const About = () => {
   );
 };
 
-export default About;
+export default RiskControlContent;
 
 interface ImageSectionProps {
   images: { src: string; alt: string }[];
@@ -112,3 +112,4 @@ export function TextSection({
     </div>
   );
 }
+

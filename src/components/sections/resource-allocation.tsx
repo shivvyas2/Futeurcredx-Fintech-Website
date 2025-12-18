@@ -6,13 +6,13 @@ import { cn } from '@/lib/utils';
 
 const topItems = [
   {
-    title: 'Reusable issue templates.',
+    title: 'Retention moves upstream.',
     description:
-      'Draft lightning-fast documents with our Smart Instructions and Templates.',
+      'Declined applicants stay, progress, and mature inside your platform.',
     images: [
       {
         src: '/resource-allocation/templates.webp',
-        alt: 'Issue template interface',
+        alt: 'Retention interface',
         width: 495,
         height: 186,
       },
@@ -22,8 +22,8 @@ const topItems = [
     fade: [''],
   },
   {
-    title: 'Simplify your stack.',
-    description: 'No more Confluence, SharePoint, or Microsoft Word.',
+    title: 'Revenue appears earlier.',
+    description: 'Monetization before capital deployment — without loosening standards.',
     images: [
       { src: '/logos/jira.svg', alt: 'Jira logo', width: 48, height: 48 },
       { src: '/logos/excel.svg', alt: 'Excel logo', width: 48, height: 48 },
@@ -62,13 +62,13 @@ const topItems = [
 
 const bottomItems = [
   {
-    title: 'Graveyard it.',
+    title: 'Risk becomes observable.',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do.',
+      'Longitudinal behavior replaces thin snapshots.',
     images: [
       {
         src: '/resource-allocation/graveyard.webp',
-        alt: 'Graveyard interface',
+        alt: 'Risk visibility interface',
         width: 305,
         height: 280,
       },
@@ -78,13 +78,13 @@ const bottomItems = [
     fade: ['bottom'],
   },
   {
-    title: 'Task discussions.',
+    title: 'Sponsor relationships strengthen.',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.',
+      'Fewer exceptions. More clarity. Cleaner approvals.',
     images: [
       {
         src: '/resource-allocation/discussions.webp',
-        alt: 'Task discussions interface',
+        alt: 'Sponsor relationships interface',
         width: 320,
         height: 103,
       },
@@ -94,13 +94,13 @@ const bottomItems = [
     fade: [''],
   },
   {
-    title: 'Notifications.',
+    title: 'Product-Linked Readiness.',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.',
+      'SMBs see exactly what unlocks each product — no guessing.',
     images: [
       {
         src: '/resource-allocation/notifications.webp',
-        alt: 'Notifications interface',
+        alt: 'Product readiness interface',
         width: 305,
         height: 280,
       },
@@ -116,7 +116,7 @@ export const ResourceAllocation = () => {
     <section id="resource-allocation" className="pb-28 lg:pb-32">
       <div className="">
         <h2 className="container text-center text-3xl font-semibold tracking-tight text-balance sm:text-4xl md:text-5xl lg:text-6xl">
-          Mainline your resource allocation and execution
+          What Changes After Deployment
         </h2>
 
         <div className="mt-8 md:mt-12 lg:mt-20">

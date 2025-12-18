@@ -9,15 +9,15 @@ import { Card, CardContent } from '@/components/ui/card';
 
 const items = [
   {
-    title: 'Purpose-built for product development',
+    title: 'Credit Visibility at Scale',
     image: '/features/triage-card.svg',
   },
   {
-    title: 'Manage projects end-to-end',
+    title: 'Progression Infrastructure',
     image: '/features/cycle-card.svg',
   },
   {
-    title: 'Build momentum and healthy habits',
+    title: 'Enterprise Control & Audit Trails',
     image: '/features/overview-card.svg',
   },
 ];
@@ -30,19 +30,18 @@ export const Features = () => {
         <div className="relative flex items-center justify-center">
           <DashedLine className="text-muted-foreground" />
           <span className="bg-muted text-muted-foreground absolute px-3 font-mono text-sm font-medium tracking-wide max-md:hidden">
-            MEASURE TWICE. CUT ONCE.
+            SECTION 4 — CORE CAPABILITIES
           </span>
         </div>
 
         {/* Content */}
         <div className="mx-auto mt-10 grid max-w-4xl items-center gap-3 md:gap-0 lg:mt-24 lg:grid-cols-2">
           <h2 className="text-2xl font-semibold tracking-tight md:text-4xl lg:text-5xl">
-            Made for modern product teams
+            What Institutions Use It For
           </h2>
           <p className="text-muted-foreground leading-snug font-medium">
-            Mainline is built on the habits that make the best product teams
-            successful: staying focused, moving quickly, and always aiming for
-            high-quality work.
+            Personal VantageScore + business credit context, normalized and explainable.
+            Turn binary decline into governed readiness with Measured Opportunity.
           </p>
         </div>
 

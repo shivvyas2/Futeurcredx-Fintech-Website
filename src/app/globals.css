@@ -69,12 +69,30 @@
 
 @utility container {
   margin-inline: auto;
-  padding-inline: 1.5rem;
+  padding-inline: 2rem;
+  max-width: 95%;
   @media (width >= --theme(--breakpoint-sm)) {
-    max-width: none;
+    max-width: 95%;
+  }
+  @media (width >= 1200px) {
+    max-width: 96%;
+    padding-inline: 2.5rem;
   }
   @media (width >= 1400px) {
-    max-width: 1220px;
+    max-width: 96%;
+    padding-inline: 3rem;
+  }
+  @media (width >= 1600px) {
+    max-width: 96%;
+    padding-inline: 3.5rem;
+  }
+  @media (width >= 1920px) {
+    max-width: 95%;
+    padding-inline: 4rem;
+  }
+  @media (width >= 2560px) {
+    max-width: 94%;
+    padding-inline: 5rem;
   }
 }
 

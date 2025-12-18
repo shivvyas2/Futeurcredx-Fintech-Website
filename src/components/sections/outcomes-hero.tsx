@@ -5,55 +5,56 @@ import { Button } from '@/components/ui/button';
 
 const stats = [
   {
-    value: 'Visibility',
-    label: 'Credit & Readiness Awareness',
+    value: '01',
+    label: 'Funnel Stops Leaking',
   },
   {
-    value: 'Progression',
-    label: 'Earned Trust, Not Binary Gates',
+    value: '02',
+    label: 'Own the Legitimacy Moment',
   },
   {
-    value: 'Control',
-    label: 'Risk Teams Sleep Better',
+    value: '03',
+    label: 'Retention Becomes Gravity',
   },
   {
-    value: 'Retention',
-    label: 'Revenue Created Inside Your Platform',
+    value: '04',
+    label: 'Revenue Appears Earlier',
+  },
+  {
+    value: '05',
+    label: 'Lending Gets Smarter',
   },
 ];
 
-export function AboutHero() {
+export function OutcomesHero() {
   return (
     <section className="">
       <div className="container flex max-w-5xl flex-col justify-between gap-8 md:gap-20 lg:flex-row lg:items-center lg:gap-24 xl:gap-24">
         <div className="flex-[1.5]">
           <p className="text-muted-foreground mb-4 text-sm font-semibold uppercase tracking-widest">
-            Private Pilot — Invite Only
+            Outcomes
           </p>
           <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
-            The Pre-Credit Operating System That Makes SMBs Bankable
+            What Changes When You Stop Rejecting Potential
           </h1>
 
           <p className="text-muted-foreground mt-5 font-sans text-2xl font-medium md:text-3xl lg:text-4xl">
-            — Before They Earn a Dollar
+            Not hypothetically. Structurally.
           </p>
 
           <p className="text-muted-foreground mt-8 hidden max-w-lg space-y-6 text-lg font-medium text-balance md:block lg:mt-12">
-            Most fintechs say they support small business. The truth is: they only support them after revenue already exists.
+            Most fintech platforms measure success at the moment of approval.
             <br />
             <br />
-            LumiqAI fixes the broken middle — the moment where capable, disciplined businesses are filtered out by blunt rules, lazy proxies, and inherited fear.
-            <br />
-            <br />
-            Not because they&apos;re bad risks — but because no system exists to let them prove themselves safely.
+            LumiqAI shifts the center of gravity upstream — to the moment before approval, where most value is silently destroyed.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <Link href="/contact">
               <Button size="lg">Request a Private Pilot</Button>
             </Link>
-            <Link href="#how-it-works">
-              <Button variant="outline" size="lg">Learn More</Button>
+            <Link href="#outcomes">
+              <Button variant="outline" size="lg">See the Outcomes</Button>
             </Link>
           </div>
         </div>
@@ -71,10 +72,10 @@ export function AboutHero() {
           />
           {stats.map((stat) => (
             <div key={stat.label} className="flex flex-col gap-1">
-              <div className="font-sans text-4xl font-medium tracking-wide md:text-5xl">
+              <div className="font-sans text-3xl font-medium tracking-wide md:text-4xl">
                 {stat.value}
               </div>
-              <div className="text-muted-foreground font-medium">
+              <div className="text-muted-foreground text-sm font-medium">
                 {stat.label}
               </div>
             </div>
@@ -84,3 +85,4 @@ export function AboutHero() {
     </section>
   );
 }
+

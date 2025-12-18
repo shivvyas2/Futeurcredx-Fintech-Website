@@ -4,25 +4,25 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
-const About = () => {
+const OutcomesContent = () => {
   return (
     <section className="container mt-10 flex max-w-5xl flex-col-reverse gap-8 md:mt-14 md:gap-14 lg:mt-20 lg:flex-row lg:items-end">
       {/* Images Left - Text Right */}
       <div className="flex flex-col gap-8 lg:gap-16 xl:gap-20">
         <ImageSection
           images={[
-            { src: '/about/1.webp', alt: 'Industry Contradiction' },
-            { src: '/about/2.webp', alt: 'Real Cost' },
+            { src: '/about/1.webp', alt: 'Funnel Transformation' },
+            { src: '/about/2.webp', alt: 'Ownership Moment' },
           ]}
           className="xl:-translate-x-10"
         />
 
         <TextSection
-          title="The Industry Contradiction Every Fintech Quietly Hides"
+          title="01 — Your Funnel Stops Leaking"
           paragraphs={[
-            'Fintech sells itself as modern. But when ambiguity hits: underwriters retreat to owner FICO, product teams default to crude revenue brackets, banks lean on thin-file heuristics, RBF gates assume survival already occurred.',
-            "Why? Because uncertainty scares balance sheets. So when revenue is low and business credit files don't exist, the system trusts: The founder's personal past — not the business's future.",
-            "This isn't innovation — this is risk avoidance dressed in better UI. It feels modern, but it is still anchored in history — not potential.",
+            'BEFORE: Applications spike, Approvals look clean, Declines disappear, CAC resets every cycle.',
+            'AFTER: Declines become states, not exits. 70–90% of "not approved" applicants remain. Readiness is formed instead of deferred. Value creation starts before capital is deployed.',
+            'Your funnel stops ending early. It starts compounding upstream.',
           ]}
           ctaButton={{
             href: '/contact',
@@ -34,17 +34,17 @@ const About = () => {
       {/* Text Left - Images Right */}
       <div className="flex flex-col gap-8 lg:gap-16 xl:gap-20">
         <TextSection
-          title="The Real Cost of Current Approaches"
+          title="02 — You Own the Moment Businesses Become Real"
           paragraphs={[
-            "Here's what your funnel doesn't tell you: You don't lose customers later. You lose them before they even begin.",
-            "You reject: disciplined operators, early-stage LLCs, service-based ventures with contracts, founders yet to monetize. Not because they're bad risks — but because your stack lacks a way for them to earn trust incrementally.",
-            "That's the moment every modern fintech misses.",
+            'There is a single moment every SMB remembers: "This is when we became legitimate." With LumiqAI, that moment happens inside your platform — before anyone else ever touches them.',
+            '→ The first financial mirror → The first place progress is visible → The system that taught them how readiness is earned',
+            'That ownership never resets.',
           ]}
         />
         <ImageSection
           images={[
-            { src: '/about/3.webp', alt: 'Radical Insight' },
-            { src: '/about/4.webp', alt: 'Measured Opportunity' },
+            { src: '/about/3.webp', alt: 'Retention Gravity' },
+            { src: '/about/4.webp', alt: 'Revenue Earlier' },
           ]}
           className="hidden lg:flex xl:translate-x-10"
         />
@@ -53,7 +53,7 @@ const About = () => {
   );
 };
 
-export default About;
+export default OutcomesContent;
 
 interface ImageSectionProps {
   images: { src: string; alt: string }[];
@@ -112,3 +112,4 @@ export function TextSection({
     </div>
   );
 }
+

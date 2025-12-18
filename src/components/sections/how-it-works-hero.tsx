@@ -5,55 +5,60 @@ import { Button } from '@/components/ui/button';
 
 const stats = [
   {
-    value: 'Visibility',
-    label: 'Credit & Readiness Awareness',
+    value: '1. Visibility',
+    label: 'Reality made visible, not judged',
   },
   {
-    value: 'Progression',
-    label: 'Earned Trust, Not Binary Gates',
+    value: '2. Understanding',
+    label: 'Contextual truth, not blind rejection',
   },
   {
-    value: 'Control',
-    label: 'Risk Teams Sleep Better',
+    value: '3. Opportunity',
+    label: 'Measured, sponsor-safe middle state',
   },
   {
-    value: 'Retention',
-    label: 'Revenue Created Inside Your Platform',
+    value: '4. Progression',
+    label: 'Observable, auditable, reversible',
+  },
+  {
+    value: '5. Escalation',
+    label: 'Earned access, rule-based',
+  },
+  {
+    value: '6. Graduation',
+    label: 'Revenue created, not harvested',
   },
 ];
 
-export function AboutHero() {
+export function HowItWorksHero() {
   return (
     <section className="">
       <div className="container flex max-w-5xl flex-col justify-between gap-8 md:gap-20 lg:flex-row lg:items-center lg:gap-24 xl:gap-24">
         <div className="flex-[1.5]">
           <p className="text-muted-foreground mb-4 text-sm font-semibold uppercase tracking-widest">
-            Private Pilot — Invite Only
+            A Pre-Credit Operating Loop
           </p>
           <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
-            The Pre-Credit Operating System That Makes SMBs Bankable
+            — Not a Product Feature
           </h1>
 
           <p className="text-muted-foreground mt-5 font-sans text-2xl font-medium md:text-3xl lg:text-4xl">
-            — Before They Earn a Dollar
+            Turn uncertainty into observable progress.
           </p>
 
           <p className="text-muted-foreground mt-8 hidden max-w-lg space-y-6 text-lg font-medium text-balance md:block lg:mt-12">
-            Most fintechs say they support small business. The truth is: they only support them after revenue already exists.
+            LumiqAI operates upstream of credit — in the phase where uncertainty is highest and traditional systems collapse into binary outcomes.
             <br />
             <br />
-            LumiqAI fixes the broken middle — the moment where capable, disciplined businesses are filtered out by blunt rules, lazy proxies, and inherited fear.
-            <br />
-            <br />
-            Not because they&apos;re bad risks — but because no system exists to let them prove themselves safely.
+            Its job is simple and precise: Turn uncertainty into observable progress.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <Link href="/contact">
               <Button size="lg">Request a Private Pilot</Button>
             </Link>
-            <Link href="#how-it-works">
-              <Button variant="outline" size="lg">Learn More</Button>
+            <Link href="#operating-loop">
+              <Button variant="outline" size="lg">See the Loop</Button>
             </Link>
           </div>
         </div>
@@ -71,10 +76,10 @@ export function AboutHero() {
           />
           {stats.map((stat) => (
             <div key={stat.label} className="flex flex-col gap-1">
-              <div className="font-sans text-4xl font-medium tracking-wide md:text-5xl">
+              <div className="font-sans text-2xl font-medium tracking-wide md:text-3xl">
                 {stat.value}
               </div>
-              <div className="text-muted-foreground font-medium">
+              <div className="text-muted-foreground text-sm font-medium">
                 {stat.label}
               </div>
             </div>
@@ -84,3 +89,4 @@ export function AboutHero() {
     </section>
   );
 }
+

@@ -17,59 +17,59 @@ import { cn } from '@/lib/utils';
 
 const items = [
   {
-    quote: "We're misusing Mainline as a CRM and it still works!",
-    author: 'Amy Chase',
-    role: 'PM',
-    company: 'Mercury Finance',
+    quote: 'Banks & Sponsor Institutions — If SMBs touch your platform before they qualify, this layer belongs to you.',
+    author: 'Banks',
+    role: 'Sponsor Institutions',
+    company: 'Enterprise Partner',
     image: '/testimonials/amy-chase.webp',
   },
   {
-    quote: 'I was able to replace 80% of my team with Mainline bots.',
-    author: 'Jonas Kotara',
-    role: 'Lead Engineer',
-    company: 'Mercury Finance',
+    quote: 'Neo-banks & Fintech Platforms — Built for institutions that can\'t afford guesswork.',
+    author: 'Fintech',
+    role: 'Neo-banks',
+    company: 'Enterprise Partner',
     image: '/testimonials/jonas-kotara.webp',
   },
   {
-    quote: 'Founder Mode is hard enough without having a really nice PM app.',
-    author: 'Kevin Yam',
-    role: 'Founder',
-    company: 'Mercury Finance',
+    quote: 'Embedded Finance Providers — Infrastructure for SMB readiness, credit visibility, and progression.',
+    author: 'Embedded',
+    role: 'Finance',
+    company: 'Enterprise Partner',
     image: '/testimonials/kevin-yam.webp',
   },
   {
-    quote: 'I can use the tool as a substitute from my PM.',
-    author: 'Kundo Marta',
-    role: 'Founder',
-    company: 'Mercury Finance',
+    quote: 'Lenders & RBF Operators — Above banking, lending, and RBF products. Below underwriting engines.',
+    author: 'Lenders',
+    role: 'RBF Operators',
+    company: 'Enterprise Partner',
     image: '/testimonials/kundo-marta.webp',
   },
   {
-    quote: "We're misusing Mainline as a CRM and it still works!",
-    author: 'Amy Chase',
-    role: 'PM',
-    company: 'Mercury Finance',
+    quote: 'Banks & Sponsor Institutions — If SMBs touch your platform before they qualify, this layer belongs to you.',
+    author: 'Banks',
+    role: 'Sponsor Institutions',
+    company: 'Enterprise Partner',
     image: '/testimonials/amy-chase.webp',
   },
   {
-    quote: 'I was able to replace 80% of my team with Mainline bots.',
-    author: 'Jonas Kotara',
-    role: 'Lead Engineer',
-    company: 'Mercury Finance',
+    quote: 'Neo-banks & Fintech Platforms — Built for institutions that can\'t afford guesswork.',
+    author: 'Fintech',
+    role: 'Neo-banks',
+    company: 'Enterprise Partner',
     image: '/testimonials/jonas-kotara.webp',
   },
   {
-    quote: 'Founder Mode is hard enough without having a really nice PM app.',
-    author: 'Kevin Yam',
-    role: 'Founder',
-    company: 'Mercury Finance',
+    quote: 'Embedded Finance Providers — Infrastructure for SMB readiness, credit visibility, and progression.',
+    author: 'Embedded',
+    role: 'Finance',
+    company: 'Enterprise Partner',
     image: '/testimonials/kevin-yam.webp',
   },
   {
-    quote: 'I can use the tool as a substitute from my PM.',
-    author: 'Kundo Marta',
-    role: 'Founder',
-    company: 'Mercury Finance',
+    quote: 'Lenders & RBF Operators — Above banking, lending, and RBF products. Below underwriting engines.',
+    author: 'Lenders',
+    role: 'RBF Operators',
+    company: 'Enterprise Partner',
     image: '/testimonials/kundo-marta.webp',
   },
 ];
@@ -87,15 +87,14 @@ export const Testimonials = ({
         <div className="container">
           <div className="space-y-4">
             <h2 className="text-2xl font-semibold tracking-tight md:text-4xl lg:text-5xl">
-              Trusted by product builders
+              Built for Institutions That Can&apos;t Afford Guesswork
             </h2>
             <p className="text-muted-foreground max-w-md leading-snug font-medium">
-              Mainline is built on the habits that make the best product teams
-              successful: staying focused, moving quickly, and always aiming for
-              high-quality work.
+              If SMBs touch your platform before they qualify — this layer belongs to you.
+              Banks, fintech platforms, sponsor institutions, and embedded finance operators.
             </p>
             <Button variant="outline" className="shadow-md">
-              Read our Customer Stories <ArrowRight className="size-4" />
+              Request Enterprise Briefing <ArrowRight className="size-4" />
             </Button>
           </div>
 

@@ -97,7 +97,7 @@ const comparisonFeatures: FeatureSection[] = [
         enterprise: true,
       },
       {
-        name: 'Mainline AI',
+        name: 'FUTEURCREDX Enterprise',
         free: false,
         startup: true,
         enterprise: true,

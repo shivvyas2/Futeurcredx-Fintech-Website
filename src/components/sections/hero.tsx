@@ -15,23 +15,23 @@ import { Button } from '@/components/ui/button';
 
 const features = [
   {
-    title: 'Tailored workflows',
-    description: 'Track progress across custom issue flows for your team.',
+    title: 'Not a dashboard',
+    description: 'No surface-level reporting or consumer tooling.',
     icon: CircleDot,
   },
   {
-    title: 'Cross-team projects',
-    description: 'Collaborate across teams and departments.',
+    title: 'Not a credit decision engine',
+    description: 'Approval authority stays exactly where it belongs.',
     icon: Blend,
   },
   {
-    title: 'Milestones',
-    description: 'Break projects down into concrete phases.',
+    title: 'Not a workaround',
+    description: 'Built for sponsors, compliance, and governance.',
     icon: Diamond,
   },
   {
-    title: 'Progress insights',
-    description: 'Track scope, velocity, and progress over time.',
+    title: 'Enterprise Infrastructure',
+    description: 'Above products, below policy, outside the money path.',
     icon: ChartNoAxesColumn,
   },
 ];
@@ -42,24 +42,27 @@ export default function Hero() {
       <div className="container flex flex-col justify-between gap-8 md:gap-14 lg:flex-row lg:gap-20">
         {/* Left side - Main content */}
         <div className="flex-1">
-          <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl md:text-5xl md:whitespace-nowrap lg:text-6xl">
-            Mainline your product.
+          <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
+            The Infrastructure Layer for SMB Readiness
           </h1>
 
           <p className="text-muted-foreground mt-5 font-sans text-2xl font-medium md:text-3xl lg:text-4xl">
-            Mainline is the fit-for-purpose tool for planning and building
-            modern software products.
+            Credit Visibility and Progression — Before Revenue, Before Approval, Before Competitors.
+          </p>
+
+          <p className="text-muted-foreground mt-4 text-lg">
+            Built for banks, fintech platforms, sponsor institutions, and embedded finance operators.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-4">
-            <Button>Get started</Button>
+            <Button>Request Enterprise Briefing</Button>
             <Link href="#">
               <Button
                 variant="outline"
                 className="from-background h-auto gap-2 bg-linear-to-r to-transparent shadow-md"
               >
                 <span className="max-w-56 truncate text-start md:max-w-none">
-                  Mainline raises $12M from Roba Ventures
+                  Request Enterprise Briefing
                 </span>
                 <ArrowRight className="stroke-3" />
               </Button>

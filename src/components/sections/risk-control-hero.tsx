@@ -5,55 +5,55 @@ import { Button } from '@/components/ui/button';
 
 const stats = [
   {
-    value: 'Visibility',
-    label: 'Credit & Readiness Awareness',
+    value: 'Authority',
+    label: 'Stays with your institution',
   },
   {
-    value: 'Progression',
-    label: 'Earned Trust, Not Binary Gates',
+    value: 'Sponsor',
+    label: 'Policy and constraints preserved',
   },
   {
-    value: 'Control',
-    label: 'Risk Teams Sleep Better',
+    value: 'Risk Committee',
+    label: 'Escalation, override, kill-switch',
   },
   {
-    value: 'Retention',
-    label: 'Revenue Created Inside Your Platform',
+    value: 'Underwriting',
+    label: 'Your models, your decisioning',
   },
 ];
 
-export function AboutHero() {
+export function RiskControlHero() {
   return (
     <section className="">
       <div className="container flex max-w-5xl flex-col justify-between gap-8 md:gap-20 lg:flex-row lg:items-center lg:gap-24 xl:gap-24">
         <div className="flex-[1.5]">
           <p className="text-muted-foreground mb-4 text-sm font-semibold uppercase tracking-widest">
-            Private Pilot — Invite Only
+            Control Layer Documentation
           </p>
           <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
-            The Pre-Credit Operating System That Makes SMBs Bankable
+            Risk, Control, and Sponsor Alignment
           </h1>
 
           <p className="text-muted-foreground mt-5 font-sans text-2xl font-medium md:text-3xl lg:text-4xl">
-            — Before They Earn a Dollar
+            This Is How Uncertainty Is Governed — Not Avoided
           </p>
 
           <p className="text-muted-foreground mt-8 hidden max-w-lg space-y-6 text-lg font-medium text-balance md:block lg:mt-12">
-            Most fintechs say they support small business. The truth is: they only support them after revenue already exists.
+            LumiqAI is not a lending product. It is not an underwriting shortcut. It is not a workaround for policy.
             <br />
             <br />
-            LumiqAI fixes the broken middle — the moment where capable, disciplined businesses are filtered out by blunt rules, lazy proxies, and inherited fear.
+            LumiqAI is a Pre-Credit Operating System — a control layer that governs how uncertainty is handled before capital is ever placed at risk.
             <br />
             <br />
-            Not because they&apos;re bad risks — but because no system exists to let them prove themselves safely.
+            Its purpose is not to loosen standards. Its purpose is to replace blind rejection with observable readiness — without moving authority, policy ownership, or sponsor control.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <Link href="/contact">
               <Button size="lg">Request a Private Pilot</Button>
             </Link>
-            <Link href="#how-it-works">
-              <Button variant="outline" size="lg">Learn More</Button>
+            <Link href="#risk-philosophy">
+              <Button variant="outline" size="lg">Start Here</Button>
             </Link>
           </div>
         </div>
@@ -84,3 +84,4 @@ export function AboutHero() {
     </section>
   );
 }
+
