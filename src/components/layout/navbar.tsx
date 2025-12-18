@@ -21,21 +21,21 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <header className="bg-background/70 absolute top-5 left-1/2 z-50 w-[min(98%,1920px)] -translate-x-1/2 rounded-full border backdrop-blur-md lg:top-12">
-      <div className="flex items-center justify-between px-6 py-4 lg:px-12 lg:py-5">
+    <header className="bg-background/70 absolute top-6 left-1/2 z-50 w-[min(96%,1600px)] -translate-x-1/2 rounded-full border backdrop-blur-md sm:top-8 lg:top-12">
+      <div className="flex items-center justify-between px-6 py-4 sm:px-10 sm:py-5 lg:px-12 lg:py-5">
         {/* Logo Section */}
-        <Link href="/" className="flex shrink-0 items-center">
+        <Link href="/" className="flex shrink-0 items-center min-w-[180px]">
           <Image
             src="/logo.png"
             alt="FUTEURCREDX"
-            width={200}
-            height={100}
-            className="h-20 w-auto dark:invert lg:h-18"
+            width={180}
+            height={50}
+            className="h-10 w-auto dark:invert sm:h-12 lg:h-14"
           />
         </Link>
 
         {/* Desktop Navigation - Centered */}
-        <nav className="max-lg:hidden mx-auto flex items-center gap-2">
+        <nav className="max-lg:hidden flex items-center justify-center flex-1 gap-4 ml-8">
           {ITEMS.map((link) => (
             <Link
               key={link.label}
@@ -113,3 +113,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
