@@ -10,14 +10,6 @@ import { ChevronRight } from 'lucide-react';
 
 import { ThemeToggle } from '@/components/theme-toggle';
 import { Button } from '@/components/ui/button';
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-} from '@/components/ui/navigation-menu';
 import { cn } from '@/lib/utils';
 
 const ITEMS = [
@@ -40,60 +32,26 @@ const Navbar = () => {
             src="/logo.png"
             alt="FUTEURCREDX"
             width={200}
-            height={50}
-            className="h-10 w-auto dark:invert lg:h-14"
+            height={100}
+            className="h-20 w-auto dark:invert lg:h-18"
           />
         </Link>
 
         {/* Desktop Navigation - Centered */}
-        <NavigationMenu className="max-lg:hidden mx-auto">
-          <NavigationMenuList className="gap-2">
-            {ITEMS.map((link) =>
-              link.dropdownItems ? (
-                <NavigationMenuItem key={link.label}>
-                  <NavigationMenuTrigger className="data-[state=open]:bg-accent/50 bg-transparent! px-2.5 py-1.5 text-sm">
-                    {link.label}
-                  </NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <ul className="w-[400px] space-y-2 p-4">
-                      {link.dropdownItems.map((item) => (
-                        <li key={item.title}>
-                          <NavigationMenuLink asChild>
-                            <Link
-                              href={item.href}
-                              className="group hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground flex items-center gap-4 rounded-md p-3 leading-none no-underline outline-hidden transition-colors select-none"
-                            >
-                              <div className="space-y-1.5 transition-transform duration-300 group-hover:translate-x-1">
-                                <div className="text-sm leading-none font-medium">
-                                  {item.title}
-                                </div>
-                                <p className="text-muted-foreground line-clamp-2 text-sm leading-snug">
-                                  {item.description}
-                                </p>
-                              </div>
-                            </Link>
-                          </NavigationMenuLink>
-                        </li>
-                      ))}
-                    </ul>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
-              ) : (
-                <NavigationMenuItem key={link.label}>
-                  <Link
-                    href={link.href}
-                    className={cn(
-                      'relative bg-transparent px-4 py-2 text-xs font-medium transition-colors hover:text-primary/80 whitespace-nowrap',
-                      pathname === link.href && 'text-muted-foreground',
-                    )}
-                  >
-                    {link.label}
-                  </Link>
-                </NavigationMenuItem>
-              ),
-            )}
-          </NavigationMenuList>
-        </NavigationMenu>
+        <nav className="max-lg:hidden mx-auto flex items-center gap-2">
+          {ITEMS.map((link) => (
+            <Link
+              key={link.label}
+              href={link.href}
+              className={cn(
+                'relative bg-transparent px-4 py-2 text-xs font-medium transition-colors hover:text-primary/80 whitespace-nowrap',
+                pathname === link.href && 'text-muted-foreground',
+              )}
+            >
+              {link.label}
+            </Link>
+          ))}
+        </nav>
 
         {/* Right Section - Theme Toggle & Contact */}
         <div className="flex items-center gap-2 lg:gap-3">
