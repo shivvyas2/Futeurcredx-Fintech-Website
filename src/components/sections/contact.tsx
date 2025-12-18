@@ -2,7 +2,7 @@ import React from 'react';
 
 import Link from 'next/link';
 
-import { Facebook, Linkedin, Twitter } from 'lucide-react';
+import { Instagram, Linkedin, Twitter } from 'lucide-react';
 
 import { DashedLine } from '../dashed-line';
 
@@ -16,9 +16,9 @@ const contactInfo = [
     title: 'Corporate office',
     content: (
       <p className="text-muted-foreground mt-3">
-        1 Carlsberg Close
+        17 State Street, Floor 40
         <br />
-        1260 Hillview, Australia
+        New York, New York 10004
       </p>
     ),
   },
@@ -27,21 +27,12 @@ const contactInfo = [
     content: (
       <div className="mt-3">
         <div>
-          <p className="">Careers</p>
+          <p className="">Support</p>
           <Link
-            href="mailto:careers@streamline.com"
+            href="mailto:support@futeurcredx.com"
             className="text-muted-foreground hover:text-foreground"
           >
-            careers@streamline.com
-          </Link>
-        </div>
-        <div className="mt-1">
-          <p className="">Press</p>
-          <Link
-            href="mailto:press@streamline.com"
-            className="text-muted-foreground hover:text-foreground"
-          >
-            press@streamline.com
+            support@futeurcredx.com
           </Link>
         </div>
       </div>
@@ -51,15 +42,15 @@ const contactInfo = [
     title: 'Follow us',
     content: (
       <div className="mt-3 flex gap-6 lg:gap-10">
-        <Link href="#" className="text-muted-foreground hover:text-foreground">
-          <Facebook className="size-5" />
-        </Link>
-        <Link href="#" className="text-muted-foreground hover:text-foreground">
+        <a href="https://www.instagram.com/futeurai/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground">
+          <Instagram className="size-5" />
+        </a>
+        <a href="https://x.com/FuteurAI" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground">
           <Twitter className="size-5" />
-        </Link>
-        <Link href="#" className="text-muted-foreground hover:text-foreground">
+        </a>
+        <a href="https://www.linkedin.com/company/futeurai/posts/?feedView=all" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground">
           <Linkedin className="size-5" />
-        </Link>
+        </a>
       </div>
     ),
   },

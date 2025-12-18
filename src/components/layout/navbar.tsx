@@ -33,11 +33,16 @@ const Navbar = () => {
 
   return (
     <header className="bg-background/70 absolute top-5 left-1/2 z-50 w-[min(98%,1920px)] -translate-x-1/2 rounded-full border backdrop-blur-md lg:top-12">
-      <div className="flex items-center justify-between px-6 py-3 lg:px-12 lg:py-4">
+      <div className="flex items-center justify-between px-6 py-4 lg:px-12 lg:py-5">
         {/* Logo Section */}
-        <Link href="/" className="flex shrink-0 flex-col items-start">
-          <span className="text-base font-extrabold tracking-tight text-slate-700 dark:text-slate-200 lg:text-lg">FUTEURCREDX</span>
-          <span className="text-muted-foreground/40 text-[3px] font-thin tracking-[0.1em] uppercase">For Enterprise</span>
+        <Link href="/" className="flex shrink-0 items-center">
+          <Image
+            src="/logo.png"
+            alt="FUTEURCREDX"
+            width={200}
+            height={50}
+            className="h-10 w-auto dark:invert lg:h-14"
+          />
         </Link>
 
         {/* Desktop Navigation - Centered */}

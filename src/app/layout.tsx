@@ -63,60 +63,56 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: 'FUTEURCREDX - Modern Next.js Template',
-    template: '%s | FUTEURCREDX',
+    default: 'Futeurcredx - For Enterprise',
+    template: '%s | Futeurcredx',
   },
   description:
-    'A modern, fully featured Next.js template built with Shadcn/UI, TailwindCSS and TypeScript, perfect for your next web application.',
+    'The Infrastructure Layer for SMB Readiness. Credit Visibility and Progression — Before Revenue, Before Approval, Before Competitors.',
   keywords: [
-    'Next.js',
-    'React',
-    'JavaScript',
-    'TypeScript',
-    'TailwindCSS',
-    'Template',
-    'Shadcn/UI',
-    'Web Development',
+    'Fintech',
+    'SMB',
+    'Credit',
+    'Enterprise',
+    'Banking',
+    'Lending',
+    'Infrastructure',
+    'Financial Services',
   ],
-  authors: [{ name: 'FUTEURCREDX Team' }],
-  creator: 'FUTEURCREDX Team',
-  publisher: 'FUTEURCREDX',
+  authors: [{ name: 'Futeurcredx Team' }],
+  creator: 'Futeurcredx Team',
+  publisher: 'Futeurcredx',
   robots: {
     index: true,
     follow: true,
   },
   icons: {
     icon: [
-      { url: '/favicon/favicon.ico', sizes: '48x48' },
-      { url: '/favicon/favicon.svg', type: 'image/svg+xml' },
-      { url: '/favicon/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
-      { url: '/favicon/favicon.svg', type: 'image/svg+xml' },
-      { url: '/favicon/favicon.ico' },
+      { url: '/favicon.ico' },
     ],
     apple: [{ url: '/favicon/apple-touch-icon.png', sizes: '180x180' }],
-    shortcut: [{ url: '/favicon/favicon.ico' }],
+    shortcut: [{ url: '/favicon.ico' }],
   },
   openGraph: {
-    title: 'FUTEURCREDX - Modern Next.js Template',
+    title: 'Futeurcredx - For Enterprise',
     description:
-      'A modern, fully featured Next.js template built with Shadcn/UI, TailwindCSS and TypeScript, perfect for your next web application.',
-    siteName: 'FUTEURCREDX',
+      'The Infrastructure Layer for SMB Readiness. Credit Visibility and Progression — Before Revenue, Before Approval, Before Competitors.',
+    siteName: 'Futeurcredx',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'FUTEURCREDX - Modern Next.js Template',
+        alt: 'Futeurcredx - For Enterprise',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'FUTEURCREDX - Modern Next.js Template',
+    title: 'Futeurcredx - For Enterprise',
     description:
-      'A modern, fully featured Next.js template built with Shadcn/UI, TailwindCSS and TypeScript, perfect for your next web application.',
+      'The Infrastructure Layer for SMB Readiness. Credit Visibility and Progression — Before Revenue, Before Approval, Before Competitors.',
     images: ['/og-image.jpg'],
-    creator: '@mainline',
+    creator: '@futeurcredx',
   },
 };
 
