@@ -1,8 +1,8 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
-import { Button } from '@/components/ui/button';
-import { cn } from '@/lib/utils';
+import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 const About = () => {
   return (
@@ -11,8 +11,8 @@ const About = () => {
       <div className="flex flex-col gap-8 lg:gap-16 xl:gap-20">
         <ImageSection
           images={[
-            { src: '/about/1.webp', alt: 'Industry Contradiction' },
-            { src: '/about/2.webp', alt: 'Real Cost' },
+            { src: "/about/1.webp", alt: "Industry Contradiction" },
+            { src: "/about/2.webp", alt: "Real Cost" },
           ]}
           className="xl:-translate-x-10"
         />
@@ -20,13 +20,13 @@ const About = () => {
         <TextSection
           title="The Industry Contradiction Every Fintech Quietly Hides"
           paragraphs={[
-            'Fintech sells itself as modern. But when ambiguity hits: underwriters retreat to owner FICO, product teams default to crude revenue brackets, banks lean on thin-file heuristics, RBF gates assume survival already occurred.',
+            "Fintech sells itself as modern. But when ambiguity hits: underwriters retreat to owner FICO, product teams default to crude revenue brackets, banks lean on thin-file heuristics, RBF gates assume survival already occurred.",
             "Why? Because uncertainty scares balance sheets. So when revenue is low and business credit files don't exist, the system trusts: The founder's personal past — not the business's future.",
             "This isn't innovation — this is risk avoidance dressed in better UI. It feels modern, but it is still anchored in history — not potential.",
           ]}
           ctaButton={{
-            href: '/contact',
-            text: 'Request a Private Pilot',
+            href: "/contact",
+            text: "Request a Private Pilot",
           }}
         />
       </div>
@@ -43,8 +43,8 @@ const About = () => {
         />
         <ImageSection
           images={[
-            { src: '/about/3.webp', alt: 'Radical Insight' },
-            { src: '/about/4.webp', alt: 'Measured Opportunity' },
+            { src: "/about/3.webp", alt: "Radical Insight" },
+            { src: "/about/4.webp", alt: "Measured Opportunity" },
           ]}
           className="hidden lg:flex xl:translate-x-10"
         />
@@ -62,7 +62,7 @@ interface ImageSectionProps {
 
 export function ImageSection({ images, className }: ImageSectionProps) {
   return (
-    <div className={cn('flex flex-col gap-6', className)}>
+    <div className={cn("flex flex-col gap-6", className)}>
       {images.map((image, index) => (
         <div
           key={index}

@@ -1,24 +1,24 @@
-import Link from 'next/link';
+import Link from "next/link";
 
-import { DashedLine } from '@/components/dashed-line';
-import { Button } from '@/components/ui/button';
+import { DashedLine } from "@/components/dashed-line";
+import { Button } from "@/components/ui/button";
 
 const stats = [
   {
-    value: 'Authority',
-    label: 'Stays with your institution',
+    value: "Authority",
+    label: "Stays with your institution",
   },
   {
-    value: 'Sponsor',
-    label: 'Policy and constraints preserved',
+    value: "Sponsor",
+    label: "Policy and constraints preserved",
   },
   {
-    value: 'Risk Committee',
-    label: 'Escalation, override, kill-switch',
+    value: "Risk Committee",
+    label: "Escalation, override, kill-switch",
   },
   {
-    value: 'Underwriting',
-    label: 'Your models, your decisioning',
+    value: "Underwriting",
+    label: "Your models, your decisioning",
   },
 ];
 
@@ -39,13 +39,18 @@ export function RiskControlHero() {
           </p>
 
           <p className="text-muted-foreground mt-8 hidden max-w-lg space-y-6 text-lg font-medium text-balance md:block lg:mt-12">
-            LumiqAI is not a lending product. It is not an underwriting shortcut. It is not a workaround for policy.
+            LumiqAI is not a lending product. It is not an underwriting
+            shortcut. It is not a workaround for policy.
             <br />
             <br />
-            LumiqAI is a Pre-Credit Operating System — a control layer that governs how uncertainty is handled before capital is ever placed at risk.
+            LumiqAI is a Pre-Credit Operating System — a control layer that
+            governs how uncertainty is handled before capital is ever placed at
+            risk.
             <br />
             <br />
-            Its purpose is not to loosen standards. Its purpose is to replace blind rejection with observable readiness — without moving authority, policy ownership, or sponsor control.
+            Its purpose is not to loosen standards. Its purpose is to replace
+            blind rejection with observable readiness — without moving
+            authority, policy ownership, or sponsor control.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-4">
@@ -53,7 +58,9 @@ export function RiskControlHero() {
               <Button size="lg">Request a Private Pilot</Button>
             </Link>
             <Link href="#risk-philosophy">
-              <Button variant="outline" size="lg">Start Here</Button>
+              <Button variant="outline" size="lg">
+                Start Here
+              </Button>
             </Link>
           </div>
         </div>
@@ -84,4 +91,3 @@ export function RiskControlHero() {
     </section>
   );
 }
-

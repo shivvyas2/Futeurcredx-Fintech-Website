@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
-import { DashedLine } from '@/components/dashed-line';
-import CreamContainer from '@/components/layout/cream-container';
-import { FAQ } from '@/components/sections/faq';
-import { Testimonials } from '@/components/sections/testimonials';
+import { DashedLine } from "@/components/dashed-line";
+import CreamContainer from "@/components/layout/cream-container";
+import { FAQ } from "@/components/sections/faq";
+import { Testimonials } from "@/components/sections/testimonials";
 
 const Page = () => {
   return (

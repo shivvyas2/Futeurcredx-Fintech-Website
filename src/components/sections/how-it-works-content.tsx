@@ -1,8 +1,8 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
-import { Button } from '@/components/ui/button';
-import { cn } from '@/lib/utils';
+import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 const HowItWorksContent = () => {
   return (
@@ -11,8 +11,8 @@ const HowItWorksContent = () => {
       <div className="flex flex-col gap-8 lg:gap-16 xl:gap-20">
         <ImageSection
           images={[
-            { src: '/about/1.webp', alt: 'Where LumiqAI Sits' },
-            { src: '/about/2.webp', alt: 'Operating Loop' },
+            { src: "/about/1.webp", alt: "Where LumiqAI Sits" },
+            { src: "/about/2.webp", alt: "Operating Loop" },
           ]}
           className="xl:-translate-x-10"
         />
@@ -20,13 +20,13 @@ const HowItWorksContent = () => {
         <TextSection
           title="Where LumiqAI Sits"
           paragraphs={[
-            'LumiqAI lives between application and capital. It does not compete with your stack. It feeds it cleaner inputs.',
-            'Products Layer: Banking Products, Lending Products, Revenue-Based Financing. LumiqAI: The Pre-Credit Operating Layer — sits between products and underwriting.',
-            'Foundation Layer: Core Underwriting Logic, Sponsor Bank Policies, Approval Authority. LumiqAI operates above your products and below your core systems, providing the intelligence layer that connects them.',
+            "LumiqAI lives between application and capital. It does not compete with your stack. It feeds it cleaner inputs.",
+            "Products Layer: Banking Products, Lending Products, Revenue-Based Financing. LumiqAI: The Pre-Credit Operating Layer — sits between products and underwriting.",
+            "Foundation Layer: Core Underwriting Logic, Sponsor Bank Policies, Approval Authority. LumiqAI operates above your products and below your core systems, providing the intelligence layer that connects them.",
           ]}
           ctaButton={{
-            href: '/contact',
-            text: 'Request a Private Pilot',
+            href: "/contact",
+            text: "Request a Private Pilot",
           }}
         />
       </div>
@@ -36,14 +36,14 @@ const HowItWorksContent = () => {
         <TextSection
           title="What LumiqAI Does — and Doesn't Do"
           paragraphs={[
-            'What LumiqAI Observes: Consistency of behavior, Reporting discipline, Cashflow patterns (where applicable), Structural readiness indicators, Progression against defined milestones. These signals inform progression, explain decisions, and reduce uncertainty.',
-            'What LumiqAI Does Not Do: ✕ Move funds ✕ Approve credit alone ✕ Override sponsor rules ✕ Replace your underwriting models ✕ Force exposure increases. LumiqAI is a control layer, not a risk engine.',
+            "What LumiqAI Observes: Consistency of behavior, Reporting discipline, Cashflow patterns (where applicable), Structural readiness indicators, Progression against defined milestones. These signals inform progression, explain decisions, and reduce uncertainty.",
+            "What LumiqAI Does Not Do: ✕ Move funds ✕ Approve credit alone ✕ Override sponsor rules ✕ Replace your underwriting models ✕ Force exposure increases. LumiqAI is a control layer, not a risk engine.",
           ]}
         />
         <ImageSection
           images={[
-            { src: '/about/3.webp', alt: 'What LumiqAI Does' },
-            { src: '/about/4.webp', alt: 'Control Layer' },
+            { src: "/about/3.webp", alt: "What LumiqAI Does" },
+            { src: "/about/4.webp", alt: "Control Layer" },
           ]}
           className="hidden lg:flex xl:translate-x-10"
         />
@@ -61,7 +61,7 @@ interface ImageSectionProps {
 
 export function ImageSection({ images, className }: ImageSectionProps) {
   return (
-    <div className={cn('flex flex-col gap-6', className)}>
+    <div className={cn("flex flex-col gap-6", className)}>
       {images.map((image, index) => (
         <div
           key={index}
@@ -111,4 +111,3 @@ export function TextSection({
     </div>
   );
 }
-

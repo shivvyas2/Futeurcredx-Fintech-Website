@@ -1,8 +1,8 @@
-import { DashedLine } from '@/components/dashed-line';
-import CreamContainer from '@/components/layout/cream-container';
-import OutcomesContent from '@/components/sections/outcomes-content';
-import { OutcomesHero } from '@/components/sections/outcomes-hero';
-import { OutcomesBottom } from '@/components/sections/outcomes-bottom';
+import { DashedLine } from "@/components/dashed-line";
+import CreamContainer from "@/components/layout/cream-container";
+import OutcomesContent from "@/components/sections/outcomes-content";
+import { OutcomesHero } from "@/components/sections/outcomes-hero";
+import { OutcomesBottom } from "@/components/sections/outcomes-bottom";
 
 export default function OutcomesPage() {
   return (
@@ -19,4 +19,3 @@ export default function OutcomesPage() {
     </CreamContainer>
   );
 }
-

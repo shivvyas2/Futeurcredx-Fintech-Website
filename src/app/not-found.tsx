@@ -1,9 +1,9 @@
-import Link from 'next/link';
+import Link from "next/link";
 
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft } from "lucide-react";
 
-import CreamContainer from '@/components/layout/cream-container';
-import { Button } from '@/components/ui/button';
+import CreamContainer from "@/components/layout/cream-container";
+import { Button } from "@/components/ui/button";
 
 export default function NotFound() {
   return (

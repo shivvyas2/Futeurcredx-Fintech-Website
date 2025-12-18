@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
-import CreamContainer from '@/components/layout/cream-container';
-import Contact from '@/components/sections/contact';
+import CreamContainer from "@/components/layout/cream-container";
+import Contact from "@/components/sections/contact";
 
 const Page = () => {
   return (

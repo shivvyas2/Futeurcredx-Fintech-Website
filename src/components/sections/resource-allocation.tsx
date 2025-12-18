@@ -1,113 +1,111 @@
-import Image from 'next/image';
+import Image from "next/image";
 
-import { DashedLine } from '../dashed-line';
+import { DashedLine } from "../dashed-line";
 
-import { cn } from '@/lib/utils';
+import { cn } from "@/lib/utils";
 
 const topItems = [
   {
-    title: 'Retention moves upstream.',
+    title: "Retention moves upstream.",
     description:
-      'Declined applicants stay, progress, and mature inside your platform.',
+      "Declined applicants stay, progress, and mature inside your platform.",
     images: [
       {
-        src: '/resource-allocation/templates.webp',
-        alt: 'Retention interface',
+        src: "/resource-allocation/templates.webp",
+        alt: "Retention interface",
         width: 495,
         height: 186,
       },
     ],
     className:
-      'flex-1 [&>.title-container]:mb-5 md:[&>.title-container]:mb-8 xl:[&>.image-container]:translate-x-6 [&>.image-container]:translate-x-2',
-    fade: [''],
+      "flex-1 [&>.title-container]:mb-5 md:[&>.title-container]:mb-8 xl:[&>.image-container]:translate-x-6 [&>.image-container]:translate-x-2",
+    fade: [""],
   },
   {
-    title: 'Revenue appears earlier.',
-    description: 'Monetization before capital deployment — without loosening standards.',
+    title: "Revenue appears earlier.",
+    description:
+      "Monetization before capital deployment — without loosening standards.",
     images: [
-      { src: '/logos/jira.svg', alt: 'Jira logo', width: 48, height: 48 },
-      { src: '/logos/excel.svg', alt: 'Excel logo', width: 48, height: 48 },
+      { src: "/logos/jira.svg", alt: "Jira logo", width: 48, height: 48 },
+      { src: "/logos/excel.svg", alt: "Excel logo", width: 48, height: 48 },
       {
-        src: '/logos/notion.svg',
-        alt: 'Notion logo',
+        src: "/logos/notion.svg",
+        alt: "Notion logo",
         width: 48,
         height: 48,
       },
-      { src: '/logos/word.svg', alt: 'Word logo', width: 48, height: 48 },
+      { src: "/logos/word.svg", alt: "Word logo", width: 48, height: 48 },
       {
-        src: '/logos/monday.svg',
-        alt: 'Monday logo',
-        width: 48,
-        height: 48,
-      },
-      {
-        src: '/logos/drive.svg',
-        alt: 'Google Drive logo',
+        src: "/logos/monday.svg",
+        alt: "Monday logo",
         width: 48,
         height: 48,
       },
       {
-        src: '/logos/jira.svg',
-        alt: 'Jira logo',
+        src: "/logos/drive.svg",
+        alt: "Google Drive logo",
         width: 48,
         height: 48,
       },
-      { src: '/logos/asana.svg', alt: 'Asana logo', width: 48, height: 48 },
+      {
+        src: "/logos/jira.svg",
+        alt: "Jira logo",
+        width: 48,
+        height: 48,
+      },
+      { src: "/logos/asana.svg", alt: "Asana logo", width: 48, height: 48 },
     ],
     className:
-      'flex-1 [&>.title-container]:mb-5 md:[&>.title-container]:mb-8 md:[&>.title-container]:translate-x-2 xl:[&>.title-container]:translate-x-4 [&>.title-container]:translate-x-0',
+      "flex-1 [&>.title-container]:mb-5 md:[&>.title-container]:mb-8 md:[&>.title-container]:translate-x-2 xl:[&>.title-container]:translate-x-4 [&>.title-container]:translate-x-0",
     fade: [],
   },
 ];
 
 const bottomItems = [
   {
-    title: 'Risk becomes observable.',
-    description:
-      'Longitudinal behavior replaces thin snapshots.',
+    title: "Risk becomes observable.",
+    description: "Longitudinal behavior replaces thin snapshots.",
     images: [
       {
-        src: '/resource-allocation/graveyard.webp',
-        alt: 'Risk visibility interface',
+        src: "/resource-allocation/graveyard.webp",
+        alt: "Risk visibility interface",
         width: 305,
         height: 280,
       },
     ],
     className:
-      '[&>.title-container]:mb-5 md:[&>.title-container]:mb-8 xl:[&>.image-container]:translate-x-6 [&>.image-container]:translate-x-2',
-    fade: ['bottom'],
+      "[&>.title-container]:mb-5 md:[&>.title-container]:mb-8 xl:[&>.image-container]:translate-x-6 [&>.image-container]:translate-x-2",
+    fade: ["bottom"],
   },
   {
-    title: 'Sponsor relationships strengthen.',
-    description:
-      'Fewer exceptions. More clarity. Cleaner approvals.',
+    title: "Sponsor relationships strengthen.",
+    description: "Fewer exceptions. More clarity. Cleaner approvals.",
     images: [
       {
-        src: '/resource-allocation/discussions.webp',
-        alt: 'Sponsor relationships interface',
+        src: "/resource-allocation/discussions.webp",
+        alt: "Sponsor relationships interface",
         width: 320,
         height: 103,
       },
     ],
     className:
-      'justify-normal [&>.title-container]:mb-5 md:[&>.title-container]:mb-0 [&>.image-container]:flex-1 md:[&>.image-container]:place-items-center md:[&>.image-container]:-translate-y-3',
-    fade: [''],
+      "justify-normal [&>.title-container]:mb-5 md:[&>.title-container]:mb-0 [&>.image-container]:flex-1 md:[&>.image-container]:place-items-center md:[&>.image-container]:-translate-y-3",
+    fade: [""],
   },
   {
-    title: 'Product-Linked Readiness.',
-    description:
-      'SMBs see exactly what unlocks each product — no guessing.',
+    title: "Product-Linked Readiness.",
+    description: "SMBs see exactly what unlocks each product — no guessing.",
     images: [
       {
-        src: '/resource-allocation/notifications.webp',
-        alt: 'Product readiness interface',
+        src: "/resource-allocation/notifications.webp",
+        alt: "Product readiness interface",
         width: 305,
         height: 280,
       },
     ],
     className:
-      '[&>.title-container]:mb-5 md:[&>.title-container]:mb-8 xl:[&>.image-container]:translate-x-6 [&>.image-container]:translate-x-2',
-    fade: ['bottom'],
+      "[&>.title-container]:mb-5 md:[&>.title-container]:mb-8 xl:[&>.image-container]:translate-x-6 [&>.image-container]:translate-x-2",
+    fade: ["bottom"],
   },
 ];
 
@@ -167,7 +165,7 @@ const Item = ({ item, isLast, className }: ItemProps) => {
   return (
     <div
       className={cn(
-        'relative flex flex-col justify-between px-0 py-6 md:px-6 md:py-8',
+        "relative flex flex-col justify-between px-0 py-6 md:px-6 md:py-8",
         className,
         item.className,
       )}
@@ -175,12 +173,12 @@ const Item = ({ item, isLast, className }: ItemProps) => {
       <div className="title-container text-balance">
         <h3 className="inline font-semibold">{item.title} </h3>
         <span className="text-muted-foreground font-medium">
-          {' '}
+          {" "}
           {item.description}
         </span>
       </div>
 
-      {item.fade.includes('bottom') && (
+      {item.fade.includes("bottom") && (
         <div className="from-muted/80 absolute inset-0 z-10 bg-linear-to-t via-transparent to-transparent md:hidden" />
       )}
       {item.images.length > 4 ? (

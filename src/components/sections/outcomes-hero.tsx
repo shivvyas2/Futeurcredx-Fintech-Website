@@ -1,28 +1,28 @@
-import Link from 'next/link';
+import Link from "next/link";
 
-import { DashedLine } from '@/components/dashed-line';
-import { Button } from '@/components/ui/button';
+import { DashedLine } from "@/components/dashed-line";
+import { Button } from "@/components/ui/button";
 
 const stats = [
   {
-    value: '01',
-    label: 'Funnel Stops Leaking',
+    value: "01",
+    label: "Funnel Stops Leaking",
   },
   {
-    value: '02',
-    label: 'Own the Legitimacy Moment',
+    value: "02",
+    label: "Own the Legitimacy Moment",
   },
   {
-    value: '03',
-    label: 'Retention Becomes Gravity',
+    value: "03",
+    label: "Retention Becomes Gravity",
   },
   {
-    value: '04',
-    label: 'Revenue Appears Earlier',
+    value: "04",
+    label: "Revenue Appears Earlier",
   },
   {
-    value: '05',
-    label: 'Lending Gets Smarter',
+    value: "05",
+    label: "Lending Gets Smarter",
   },
 ];
 
@@ -46,7 +46,8 @@ export function OutcomesHero() {
             Most fintech platforms measure success at the moment of approval.
             <br />
             <br />
-            LumiqAI shifts the center of gravity upstream — to the moment before approval, where most value is silently destroyed.
+            LumiqAI shifts the center of gravity upstream — to the moment before
+            approval, where most value is silently destroyed.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-4">
@@ -54,7 +55,9 @@ export function OutcomesHero() {
               <Button size="lg">Request a Private Pilot</Button>
             </Link>
             <Link href="#outcomes">
-              <Button variant="outline" size="lg">See the Outcomes</Button>
+              <Button variant="outline" size="lg">
+                See the Outcomes
+              </Button>
             </Link>
           </div>
         </div>
@@ -85,4 +88,3 @@ export function OutcomesHero() {
     </section>
   );
 }
-

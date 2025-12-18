@@ -1,24 +1,24 @@
-import Link from 'next/link';
+import Link from "next/link";
 
-import { DashedLine } from '@/components/dashed-line';
-import { Button } from '@/components/ui/button';
+import { DashedLine } from "@/components/dashed-line";
+import { Button } from "@/components/ui/button";
 
 const stats = [
   {
-    value: 'Visibility',
-    label: 'Credit & Readiness Awareness',
+    value: "Visibility",
+    label: "Credit & Readiness Awareness",
   },
   {
-    value: 'Progression',
-    label: 'Earned Trust, Not Binary Gates',
+    value: "Progression",
+    label: "Earned Trust, Not Binary Gates",
   },
   {
-    value: 'Control',
-    label: 'Risk Teams Sleep Better',
+    value: "Control",
+    label: "Risk Teams Sleep Better",
   },
   {
-    value: 'Retention',
-    label: 'Revenue Created Inside Your Platform',
+    value: "Retention",
+    label: "Revenue Created Inside Your Platform",
   },
 ];
 
@@ -39,13 +39,17 @@ export function AboutHero() {
           </p>
 
           <p className="text-muted-foreground mt-8 hidden max-w-lg space-y-6 text-lg font-medium text-balance md:block lg:mt-12">
-            Most fintechs say they support small business. The truth is: they only support them after revenue already exists.
+            Most fintechs say they support small business. The truth is: they
+            only support them after revenue already exists.
             <br />
             <br />
-            LumiqAI fixes the broken middle — the moment where capable, disciplined businesses are filtered out by blunt rules, lazy proxies, and inherited fear.
+            LumiqAI fixes the broken middle — the moment where capable,
+            disciplined businesses are filtered out by blunt rules, lazy
+            proxies, and inherited fear.
             <br />
             <br />
-            Not because they&apos;re bad risks — but because no system exists to let them prove themselves safely.
+            Not because they&apos;re bad risks — but because no system exists to
+            let them prove themselves safely.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-4">
@@ -53,7 +57,9 @@ export function AboutHero() {
               <Button size="lg">Request a Private Pilot</Button>
             </Link>
             <Link href="#how-it-works">
-              <Button variant="outline" size="lg">Learn More</Button>
+              <Button variant="outline" size="lg">
+                Learn More
+              </Button>
             </Link>
           </div>
         </div>

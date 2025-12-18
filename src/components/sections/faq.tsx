@@ -1,81 +1,81 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from '@/components/ui/accordion';
-import { cn } from '@/lib/utils';
+} from "@/components/ui/accordion";
+import { cn } from "@/lib/utils";
 
 const categories = [
   {
-    title: 'Risk & Compliance',
+    title: "Risk & Compliance",
     questions: [
       {
-        question: 'Does FuteurCredX make credit decisions?',
+        question: "Does FuteurCredX make credit decisions?",
         answer:
-          'No. FuteurCredX does not make credit decisions. Approval authority stays exactly where it belongs — with your underwriting engines and sponsor rules.',
+          "No. FuteurCredX does not make credit decisions. Approval authority stays exactly where it belongs — with your underwriting engines and sponsor rules.",
       },
       {
-        question: 'Are any funds moved through the platform?',
+        question: "Are any funds moved through the platform?",
         answer:
-          'No funds are moved. FuteurCredX operates outside capital movement and approval authority.',
+          "No funds are moved. FuteurCredX operates outside capital movement and approval authority.",
       },
       {
-        question: 'Does it override existing policies?',
+        question: "Does it override existing policies?",
         answer:
-          'No policy overrides. Built for sponsors, compliance, and governance. Risk is not reduced by avoidance — it\'s reduced by visibility.',
+          "No policy overrides. Built for sponsors, compliance, and governance. Risk is not reduced by avoidance — it's reduced by visibility.",
       },
     ],
   },
   {
-    title: 'Deployment',
+    title: "Deployment",
     questions: [
       {
-        question: 'How is deployment structured?',
+        question: "How is deployment structured?",
         answer:
-          'Private, scoped pilots. One platform per category. Sponsor-aligned configuration. Expansion only after proof.',
+          "Private, scoped pilots. One platform per category. Sponsor-aligned configuration. Expansion only after proof.",
       },
       {
-        question: 'Where does FuteurCredX fit in our stack?',
+        question: "Where does FuteurCredX fit in our stack?",
         answer:
-          'Above banking, lending, and RBF products. Below underwriting engines and sponsor rules. Outside capital movement and approval authority.',
+          "Above banking, lending, and RBF products. Below underwriting engines and sponsor rules. Outside capital movement and approval authority.",
       },
     ],
   },
   {
-    title: 'Capabilities',
+    title: "Capabilities",
     questions: [
       {
-        question: 'What is Credit Visibility at Scale?',
+        question: "What is Credit Visibility at Scale?",
         answer:
-          'Personal VantageScore + business credit context, normalized and explainable.',
+          "Personal VantageScore + business credit context, normalized and explainable.",
       },
       {
-        question: 'What is Progression Infrastructure?',
+        question: "What is Progression Infrastructure?",
         answer:
-          'Turn binary decline into governed readiness with Measured Opportunity. SMBs see exactly what unlocks each product — no guessing.',
+          "Turn binary decline into governed readiness with Measured Opportunity. SMBs see exactly what unlocks each product — no guessing.",
       },
     ],
   },
 ];
 
 export const FAQ = ({
-  headerTag = 'h2',
+  headerTag = "h2",
   className,
   className2,
 }: {
-  headerTag?: 'h1' | 'h2';
+  headerTag?: "h1" | "h2";
   className?: string;
   className2?: string;
 }) => {
   return (
-    <section className={cn('py-28 lg:py-32', className)}>
+    <section className={cn("py-28 lg:py-32", className)}>
       <div className="container max-w-5xl">
-        <div className={cn('mx-auto grid gap-16 lg:grid-cols-2', className2)}>
+        <div className={cn("mx-auto grid gap-16 lg:grid-cols-2", className2)}>
           <div className="space-y-4">
-            {headerTag === 'h1' ? (
+            {headerTag === "h1" ? (
               <h1 className="text-2xl font-semibold tracking-tight md:text-4xl lg:text-5xl">
                 Got Questions?
               </h1>
@@ -85,7 +85,7 @@ export const FAQ = ({
               </h2>
             )}
             <p className="text-muted-foreground max-w-md leading-snug font-medium lg:mx-auto">
-              If you can't find what you're looking for,{' '}
+              If you can't find what you're looking for,{" "}
               <Link href="/contact" className="underline underline-offset-4">
                 get in touch
               </Link>

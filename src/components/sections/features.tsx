@@ -1,24 +1,24 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
-import { ChevronRight } from 'lucide-react';
+import { ChevronRight } from "lucide-react";
 
-import { DashedLine } from '../dashed-line';
+import { DashedLine } from "../dashed-line";
 
-import { Card, CardContent } from '@/components/ui/card';
+import { Card, CardContent } from "@/components/ui/card";
 
 const items = [
   {
-    title: 'Credit Visibility at Scale',
-    image: '/features/triage-card.svg',
+    title: "Credit Visibility at Scale",
+    image: "/features/triage-card.svg",
   },
   {
-    title: 'Progression Infrastructure',
-    image: '/features/cycle-card.svg',
+    title: "Progression Infrastructure",
+    image: "/features/cycle-card.svg",
   },
   {
-    title: 'Enterprise Control & Audit Trails',
-    image: '/features/overview-card.svg',
+    title: "Enterprise Control & Audit Trails",
+    image: "/features/overview-card.svg",
   },
 ];
 
@@ -40,8 +40,9 @@ export const Features = () => {
             What Institutions Use It For
           </h2>
           <p className="text-muted-foreground leading-snug font-medium">
-            Personal VantageScore + business credit context, normalized and explainable.
-            Turn binary decline into governed readiness with Measured Opportunity.
+            Personal VantageScore + business credit context, normalized and
+            explainable. Turn binary decline into governed readiness with
+            Measured Opportunity.
           </p>
         </div>
 
@@ -64,7 +65,7 @@ export const Features = () => {
                   <Link
                     href="#"
                     className={
-                      'group flex items-center justify-between gap-4 pe-4 pt-4 md:pe-6 md:pt-6'
+                      "group flex items-center justify-between gap-4 pe-4 pt-4 md:pe-6 md:pt-6"
                     }
                   >
                     <h3 className="max-w-60 font-sans text-2xl leading-tight font-bold tracking-tight">

@@ -1,8 +1,8 @@
-import { DashedLine } from '@/components/dashed-line';
-import CreamContainer from '@/components/layout/cream-container';
-import RiskControlContent from '@/components/sections/risk-control-content';
-import { RiskControlHero } from '@/components/sections/risk-control-hero';
-import { RiskControlBottom } from '@/components/sections/risk-control-bottom';
+import { DashedLine } from "@/components/dashed-line";
+import CreamContainer from "@/components/layout/cream-container";
+import RiskControlContent from "@/components/sections/risk-control-content";
+import { RiskControlHero } from "@/components/sections/risk-control-hero";
+import { RiskControlBottom } from "@/components/sections/risk-control-bottom";
 
 export default function RiskAndControlPage() {
   return (
@@ -19,4 +19,3 @@ export default function RiskAndControlPage() {
     </CreamContainer>
   );
 }
-

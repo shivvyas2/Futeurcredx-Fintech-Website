@@ -1,76 +1,84 @@
-import Image from 'next/image';
+import Image from "next/image";
 
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight } from "lucide-react";
 
-import { DashedLine } from '../dashed-line';
+import { DashedLine } from "../dashed-line";
 
-import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from '@/components/ui/carousel';
-import { cn } from '@/lib/utils';
+} from "@/components/ui/carousel";
+import { cn } from "@/lib/utils";
 
 const items = [
   {
-    quote: 'Banks & Sponsor Institutions — If SMBs touch your platform before they qualify, this layer belongs to you.',
-    author: 'Banks',
-    role: 'Sponsor Institutions',
-    company: 'Enterprise Partner',
-    image: '/testimonials/amy-chase.webp',
+    quote:
+      "Banks & Sponsor Institutions — If SMBs touch your platform before they qualify, this layer belongs to you.",
+    author: "Banks",
+    role: "Sponsor Institutions",
+    company: "Enterprise Partner",
+    image: "/testimonials/amy-chase.webp",
   },
   {
-    quote: 'Neo-banks & Fintech Platforms — Built for institutions that can\'t afford guesswork.',
-    author: 'Fintech',
-    role: 'Neo-banks',
-    company: 'Enterprise Partner',
-    image: '/testimonials/jonas-kotara.webp',
+    quote:
+      "Neo-banks & Fintech Platforms — Built for institutions that can't afford guesswork.",
+    author: "Fintech",
+    role: "Neo-banks",
+    company: "Enterprise Partner",
+    image: "/testimonials/jonas-kotara.webp",
   },
   {
-    quote: 'Embedded Finance Providers — Infrastructure for SMB readiness, credit visibility, and progression.',
-    author: 'Embedded',
-    role: 'Finance',
-    company: 'Enterprise Partner',
-    image: '/testimonials/kevin-yam.webp',
+    quote:
+      "Embedded Finance Providers — Infrastructure for SMB readiness, credit visibility, and progression.",
+    author: "Embedded",
+    role: "Finance",
+    company: "Enterprise Partner",
+    image: "/testimonials/kevin-yam.webp",
   },
   {
-    quote: 'Lenders & RBF Operators — Above banking, lending, and RBF products. Below underwriting engines.',
-    author: 'Lenders',
-    role: 'RBF Operators',
-    company: 'Enterprise Partner',
-    image: '/testimonials/kundo-marta.webp',
+    quote:
+      "Lenders & RBF Operators — Above banking, lending, and RBF products. Below underwriting engines.",
+    author: "Lenders",
+    role: "RBF Operators",
+    company: "Enterprise Partner",
+    image: "/testimonials/kundo-marta.webp",
   },
   {
-    quote: 'Banks & Sponsor Institutions — If SMBs touch your platform before they qualify, this layer belongs to you.',
-    author: 'Banks',
-    role: 'Sponsor Institutions',
-    company: 'Enterprise Partner',
-    image: '/testimonials/amy-chase.webp',
+    quote:
+      "Banks & Sponsor Institutions — If SMBs touch your platform before they qualify, this layer belongs to you.",
+    author: "Banks",
+    role: "Sponsor Institutions",
+    company: "Enterprise Partner",
+    image: "/testimonials/amy-chase.webp",
   },
   {
-    quote: 'Neo-banks & Fintech Platforms — Built for institutions that can\'t afford guesswork.',
-    author: 'Fintech',
-    role: 'Neo-banks',
-    company: 'Enterprise Partner',
-    image: '/testimonials/jonas-kotara.webp',
+    quote:
+      "Neo-banks & Fintech Platforms — Built for institutions that can't afford guesswork.",
+    author: "Fintech",
+    role: "Neo-banks",
+    company: "Enterprise Partner",
+    image: "/testimonials/jonas-kotara.webp",
   },
   {
-    quote: 'Embedded Finance Providers — Infrastructure for SMB readiness, credit visibility, and progression.',
-    author: 'Embedded',
-    role: 'Finance',
-    company: 'Enterprise Partner',
-    image: '/testimonials/kevin-yam.webp',
+    quote:
+      "Embedded Finance Providers — Infrastructure for SMB readiness, credit visibility, and progression.",
+    author: "Embedded",
+    role: "Finance",
+    company: "Enterprise Partner",
+    image: "/testimonials/kevin-yam.webp",
   },
   {
-    quote: 'Lenders & RBF Operators — Above banking, lending, and RBF products. Below underwriting engines.',
-    author: 'Lenders',
-    role: 'RBF Operators',
-    company: 'Enterprise Partner',
-    image: '/testimonials/kundo-marta.webp',
+    quote:
+      "Lenders & RBF Operators — Above banking, lending, and RBF products. Below underwriting engines.",
+    author: "Lenders",
+    role: "RBF Operators",
+    company: "Enterprise Partner",
+    image: "/testimonials/kundo-marta.webp",
   },
 ];
 
@@ -83,15 +91,16 @@ export const Testimonials = ({
 }) => {
   return (
     <>
-      <section className={cn('py-28 lg:py-32', className)}>
+      <section className={cn("py-28 lg:py-32", className)}>
         <div className="container">
           <div className="space-y-4">
             <h2 className="text-2xl font-semibold tracking-tight md:text-4xl lg:text-5xl">
               Built for Institutions That Can&apos;t Afford Guesswork
             </h2>
             <p className="text-muted-foreground max-w-md leading-snug font-medium">
-              If SMBs touch your platform before they qualify — this layer belongs to you.
-              Banks, fintech platforms, sponsor institutions, and embedded finance operators.
+              If SMBs touch your platform before they qualify — this layer
+              belongs to you. Banks, fintech platforms, sponsor institutions,
+              and embedded finance operators.
             </p>
             <Button variant="outline" className="shadow-md">
               Request Enterprise Briefing <ArrowRight className="size-4" />
@@ -101,7 +110,7 @@ export const Testimonials = ({
           <div className="relative mt-8 -mr-[max(3rem,calc((100vw-80rem)/2+3rem))] md:mt-12 lg:mt-20">
             <Carousel
               opts={{
-                align: 'start',
+                align: "start",
                 loop: true,
               }}
               className="w-full"
@@ -150,7 +159,7 @@ export const Testimonials = ({
       </section>
       <DashedLine
         orientation="horizontal"
-        className={cn('mx-auto max-w-[80%]', dashedLineClassName)}
+        className={cn("mx-auto max-w-[80%]", dashedLineClassName)}
       />
     </>
   );

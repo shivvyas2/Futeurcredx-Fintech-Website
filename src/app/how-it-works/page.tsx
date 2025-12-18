@@ -1,8 +1,8 @@
-import { DashedLine } from '@/components/dashed-line';
-import CreamContainer from '@/components/layout/cream-container';
-import HowItWorksContent from '@/components/sections/how-it-works-content';
-import { HowItWorksHero } from '@/components/sections/how-it-works-hero';
-import { HowItWorksBottom } from '@/components/sections/how-it-works-bottom';
+import { DashedLine } from "@/components/dashed-line";
+import CreamContainer from "@/components/layout/cream-container";
+import HowItWorksContent from "@/components/sections/how-it-works-content";
+import { HowItWorksHero } from "@/components/sections/how-it-works-hero";
+import { HowItWorksBottom } from "@/components/sections/how-it-works-bottom";
 
 export default function HowItWorksPage() {
   return (
@@ -19,4 +19,3 @@ export default function HowItWorksPage() {
     </CreamContainer>
   );
 }
-

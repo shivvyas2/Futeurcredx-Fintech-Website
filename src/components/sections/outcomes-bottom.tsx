@@ -1,38 +1,63 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
-import { Button } from '@/components/ui/button';
+import { Button } from "@/components/ui/button";
 
 const outcomes = [
   {
-    name: '03 — Retention Becomes Gravity',
-    company: 'IDENTITY LOCK-IN',
-    image: '/investors/1.webp',
-    items: ['→ See where they stand', '→ See what unlocks next', '→ See progress move weekly', 'This is not engagement. This is identity lock-in.'],
+    name: "03 — Retention Becomes Gravity",
+    company: "IDENTITY LOCK-IN",
+    image: "/investors/1.webp",
+    items: [
+      "→ See where they stand",
+      "→ See what unlocks next",
+      "→ See progress move weekly",
+      "This is not engagement. This is identity lock-in.",
+    ],
   },
   {
-    name: '04 — Revenue Appears Earlier',
-    company: 'WITHOUT MORE RISK',
-    image: '/investors/2.webp',
-    items: ['→ Pre-credit subscriptions', '→ Readiness-linked tooling', '→ Graduated product tiers', '→ Earlier cross-sell eligibility'],
+    name: "04 — Revenue Appears Earlier",
+    company: "WITHOUT MORE RISK",
+    image: "/investors/2.webp",
+    items: [
+      "→ Pre-credit subscriptions",
+      "→ Readiness-linked tooling",
+      "→ Graduated product tiers",
+      "→ Earlier cross-sell eligibility",
+    ],
   },
   {
-    name: '05 — Lending Gets Smarter',
-    company: 'NOT LOOSER',
-    image: '/investors/3.webp',
-    items: ['→ Longitudinal behavior', '→ Documented progression', '→ Explainable readiness', '→ Reduced uncertainty'],
+    name: "05 — Lending Gets Smarter",
+    company: "NOT LOOSER",
+    image: "/investors/3.webp",
+    items: [
+      "→ Longitudinal behavior",
+      "→ Documented progression",
+      "→ Explainable readiness",
+      "→ Reduced uncertainty",
+    ],
   },
   {
-    name: '06 — Risk Committees Gain Control',
-    company: 'NOT EXCEPTIONS',
-    image: '/investors/4.webp',
-    items: ['→ Uncertainty becomes staged', '→ Progression is documented', '→ Escalation is governed', '→ Intervention is easy'],
+    name: "06 — Risk Committees Gain Control",
+    company: "NOT EXCEPTIONS",
+    image: "/investors/4.webp",
+    items: [
+      "→ Uncertainty becomes staged",
+      "→ Progression is documented",
+      "→ Escalation is governed",
+      "→ Intervention is easy",
+    ],
   },
   {
-    name: '07 — Sponsor Relationships Easier',
-    company: 'NOT HARDER',
-    image: '/investors/5.webp',
-    items: ['→ Explicit middle states', '→ Documented logic', '→ Auditable progression', '→ Fewer informal exceptions'],
+    name: "07 — Sponsor Relationships Easier",
+    company: "NOT HARDER",
+    image: "/investors/5.webp",
+    items: [
+      "→ Explicit middle states",
+      "→ Documented logic",
+      "→ Auditable progression",
+      "→ Fewer informal exceptions",
+    ],
   },
 ];
 
@@ -55,7 +80,9 @@ export function OutcomesBottom() {
               height={120}
               className="object-cover"
             />
-            <p className="text-muted-foreground mt-2 text-xs uppercase tracking-wide">{item.company}</p>
+            <p className="text-muted-foreground mt-2 text-xs uppercase tracking-wide">
+              {item.company}
+            </p>
             <h3 className="mt-1 font-semibold text-sm">{item.name}</h3>
             <ul className="text-muted-foreground mt-2 space-y-1 text-sm">
               {item.items.map((line, i) => (
@@ -68,9 +95,12 @@ export function OutcomesBottom() {
 
       <div className="mt-16 grid gap-8 md:grid-cols-2">
         <div className="rounded-2xl border bg-slate-50 p-8 dark:bg-slate-900">
-          <h3 className="text-xl font-semibold">08 — Stop Competing on Features</h3>
+          <h3 className="text-xl font-semibold">
+            08 — Stop Competing on Features
+          </h3>
           <p className="text-muted-foreground mt-4">
-            Every fintech eventually converges on similar products, UX, APIs, and pricing. LumiqAI changes what you compete on:
+            Every fintech eventually converges on similar products, UX, APIs,
+            and pricing. LumiqAI changes what you compete on:
           </p>
           <ul className="text-muted-foreground mt-4 space-y-2">
             <li>→ When you meet businesses</li>
@@ -78,14 +108,18 @@ export function OutcomesBottom() {
             <li>→ How deeply you shape them</li>
           </ul>
           <p className="mt-4 font-medium">
-            Once a platform owns readiness formation, every competitor feels late.
+            Once a platform owns readiness formation, every competitor feels
+            late.
           </p>
         </div>
 
         <div className="rounded-2xl border bg-slate-50 p-8 dark:bg-slate-900">
-          <h3 className="text-xl font-semibold">09 — Competitive Loss Is Irreversible</h3>
+          <h3 className="text-xl font-semibold">
+            09 — Competitive Loss Is Irreversible
+          </h3>
           <p className="text-muted-foreground mt-4">
-            The advantage LumiqAI creates does not compound through capital or pricing. It compounds through time:
+            The advantage LumiqAI creates does not compound through capital or
+            pricing. It compounds through time:
           </p>
           <ul className="text-muted-foreground mt-4 space-y-2">
             <li>→ Captures early visibility</li>
@@ -127,7 +161,8 @@ export function OutcomesBottom() {
         <div className="mt-8">
           <p className="font-semibold">Private Pilots</p>
           <p className="text-muted-foreground mt-2">
-            We work with one platform per category. Because this is not a feature. It is an operating advantage.
+            We work with one platform per category. Because this is not a
+            feature. It is an operating advantage.
           </p>
         </div>
         <div className="mt-8 flex flex-wrap items-center gap-4">
@@ -139,4 +174,3 @@ export function OutcomesBottom() {
     </section>
   );
 }
-

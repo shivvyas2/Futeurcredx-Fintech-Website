@@ -1,8 +1,8 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
-import { Button } from '@/components/ui/button';
-import { cn } from '@/lib/utils';
+import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 const RiskControlContent = () => {
   return (
@@ -11,8 +11,8 @@ const RiskControlContent = () => {
       <div className="flex flex-col gap-8 lg:gap-16 xl:gap-20">
         <ImageSection
           images={[
-            { src: '/about/1.webp', alt: 'Risk Philosophy' },
-            { src: '/about/2.webp', alt: 'Authority' },
+            { src: "/about/1.webp", alt: "Risk Philosophy" },
+            { src: "/about/2.webp", alt: "Authority" },
           ]}
           className="xl:-translate-x-10"
         />
@@ -20,13 +20,13 @@ const RiskControlContent = () => {
         <TextSection
           title="The Risk Philosophy"
           paragraphs={[
-            'Modern credit systems break at the same point: Uncertainty. When signal quality drops, most stacks default to: owner FICO, hard revenue gates, binary rejection.',
-            'Those are not conservative decisions. They are blind ones.',
+            "Modern credit systems break at the same point: Uncertainty. When signal quality drops, most stacks default to: owner FICO, hard revenue gates, binary rejection.",
+            "Those are not conservative decisions. They are blind ones.",
             '"Risk should not be avoided when uncertainty appears. It should be measured, staged, and governed." This is the role of the Pre-Credit Operating System.',
           ]}
           ctaButton={{
-            href: '/contact',
-            text: 'Request a Private Pilot',
+            href: "/contact",
+            text: "Request a Private Pilot",
           }}
         />
       </div>
@@ -36,15 +36,15 @@ const RiskControlContent = () => {
         <TextSection
           title="Authority Never Moves"
           paragraphs={[
-            'LumiqAI is intentionally designed so that nothing critical changes hands. Authority Stays With You: ✓ Your institution — final approval authority ✓ Your sponsor bank / BIN sponsor — policy and constraints ✓ Your risk committee — escalation, override, kill-switch ✓ Your underwriting models — decisioning',
-            'LumiqAI Does Not: ✕ Does not approve ✕ Does not decline ✕ Does not lend. It governs the space between those outcomes.',
+            "LumiqAI is intentionally designed so that nothing critical changes hands. Authority Stays With You: ✓ Your institution — final approval authority ✓ Your sponsor bank / BIN sponsor — policy and constraints ✓ Your risk committee — escalation, override, kill-switch ✓ Your underwriting models — decisioning",
+            "LumiqAI Does Not: ✕ Does not approve ✕ Does not decline ✕ Does not lend. It governs the space between those outcomes.",
             'What Does Not Change: Eligibility rules, Approval thresholds, Sponsor constraints, Credit policy, Capital exposure limits. What Does Change: → What happens after "not approved" → How readiness is formed → Whether uncertainty becomes data or dead ends.',
           ]}
         />
         <ImageSection
           images={[
-            { src: '/about/3.webp', alt: 'Measured Opportunity' },
-            { src: '/about/4.webp', alt: 'Control Layer' },
+            { src: "/about/3.webp", alt: "Measured Opportunity" },
+            { src: "/about/4.webp", alt: "Control Layer" },
           ]}
           className="hidden lg:flex xl:translate-x-10"
         />
@@ -62,7 +62,7 @@ interface ImageSectionProps {
 
 export function ImageSection({ images, className }: ImageSectionProps) {
   return (
-    <div className={cn('flex flex-col gap-6', className)}>
+    <div className={cn("flex flex-col gap-6", className)}>
       {images.map((image, index) => (
         <div
           key={index}
@@ -112,4 +112,3 @@ export function TextSection({
     </div>
   );
 }
-

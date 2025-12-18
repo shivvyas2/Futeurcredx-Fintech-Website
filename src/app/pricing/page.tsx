@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
-import CreamContainer from '@/components/layout/cream-container';
-import { Pricing } from '@/components/sections/pricing';
-import Pricing2 from '@/components/sections/pricing2';
+import CreamContainer from "@/components/layout/cream-container";
+import { Pricing } from "@/components/sections/pricing";
+import Pricing2 from "@/components/sections/pricing2";
 const Page = () => {
   return (
     <CreamContainer>

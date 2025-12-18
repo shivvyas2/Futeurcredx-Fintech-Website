@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
 import {
   ArrowRight,
@@ -7,31 +7,31 @@ import {
   ChartNoAxesColumn,
   CircleDot,
   Diamond,
-} from 'lucide-react';
+} from "lucide-react";
 
-import { DashedLine } from '../dashed-line';
+import { DashedLine } from "../dashed-line";
 
-import { Button } from '@/components/ui/button';
+import { Button } from "@/components/ui/button";
 
 const features = [
   {
-    title: 'Not a dashboard',
-    description: 'No surface-level reporting or consumer tooling.',
+    title: "Not a dashboard",
+    description: "No surface-level reporting or consumer tooling.",
     icon: CircleDot,
   },
   {
-    title: 'Not a credit decision engine',
-    description: 'Approval authority stays exactly where it belongs.',
+    title: "Not a credit decision engine",
+    description: "Approval authority stays exactly where it belongs.",
     icon: Blend,
   },
   {
-    title: 'Not a workaround',
-    description: 'Built for sponsors, compliance, and governance.',
+    title: "Not a workaround",
+    description: "Built for sponsors, compliance, and governance.",
     icon: Diamond,
   },
   {
-    title: 'Enterprise Infrastructure',
-    description: 'Above products, below policy, outside the money path.',
+    title: "Enterprise Infrastructure",
+    description: "Above products, below policy, outside the money path.",
     icon: ChartNoAxesColumn,
   },
 ];
@@ -47,11 +47,13 @@ export default function Hero() {
           </h1>
 
           <p className="text-muted-foreground mt-5 font-sans text-2xl font-medium md:text-3xl lg:text-4xl">
-            Credit Visibility and Progression — Before Revenue, Before Approval, Before Competitors.
+            Credit Visibility and Progression — Before Revenue, Before Approval,
+            Before Competitors.
           </p>
 
           <p className="text-muted-foreground mt-4 text-lg">
-            Built for banks, fintech platforms, sponsor institutions, and embedded finance operators.
+            Built for banks, fintech platforms, sponsor institutions, and
+            embedded finance operators.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-4">

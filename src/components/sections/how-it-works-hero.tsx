@@ -1,32 +1,32 @@
-import Link from 'next/link';
+import Link from "next/link";
 
-import { DashedLine } from '@/components/dashed-line';
-import { Button } from '@/components/ui/button';
+import { DashedLine } from "@/components/dashed-line";
+import { Button } from "@/components/ui/button";
 
 const stats = [
   {
-    value: '1. Visibility',
-    label: 'Reality made visible, not judged',
+    value: "1. Visibility",
+    label: "Reality made visible, not judged",
   },
   {
-    value: '2. Understanding',
-    label: 'Contextual truth, not blind rejection',
+    value: "2. Understanding",
+    label: "Contextual truth, not blind rejection",
   },
   {
-    value: '3. Opportunity',
-    label: 'Measured, sponsor-safe middle state',
+    value: "3. Opportunity",
+    label: "Measured, sponsor-safe middle state",
   },
   {
-    value: '4. Progression',
-    label: 'Observable, auditable, reversible',
+    value: "4. Progression",
+    label: "Observable, auditable, reversible",
   },
   {
-    value: '5. Escalation',
-    label: 'Earned access, rule-based',
+    value: "5. Escalation",
+    label: "Earned access, rule-based",
   },
   {
-    value: '6. Graduation',
-    label: 'Revenue created, not harvested',
+    value: "6. Graduation",
+    label: "Revenue created, not harvested",
   },
 ];
 
@@ -47,10 +47,12 @@ export function HowItWorksHero() {
           </p>
 
           <p className="text-muted-foreground mt-8 hidden max-w-lg space-y-6 text-lg font-medium text-balance md:block lg:mt-12">
-            LumiqAI operates upstream of credit — in the phase where uncertainty is highest and traditional systems collapse into binary outcomes.
+            LumiqAI operates upstream of credit — in the phase where uncertainty
+            is highest and traditional systems collapse into binary outcomes.
             <br />
             <br />
-            Its job is simple and precise: Turn uncertainty into observable progress.
+            Its job is simple and precise: Turn uncertainty into observable
+            progress.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-4">
@@ -58,7 +60,9 @@ export function HowItWorksHero() {
               <Button size="lg">Request a Private Pilot</Button>
             </Link>
             <Link href="#operating-loop">
-              <Button variant="outline" size="lg">See the Loop</Button>
+              <Button variant="outline" size="lg">
+                See the Loop
+              </Button>
             </Link>
           </div>
         </div>
@@ -89,4 +93,3 @@ export function HowItWorksHero() {
     </section>
   );
 }
-
